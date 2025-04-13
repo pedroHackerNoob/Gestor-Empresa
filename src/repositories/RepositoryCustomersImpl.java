@@ -5,7 +5,7 @@ import models.Client;
 import java.util.ArrayList;
 
 public class RepositoryCustomersImpl implements RepositoryCLients{
-    private ArrayList<Client> clients = new ArrayList<Client>();
+    private final ArrayList<Client> clients = new ArrayList<>();
 
     @Override
     public void getClients() {

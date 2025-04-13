@@ -21,7 +21,10 @@ public class Mamberroi {
         repo.addClient(new Client("Mamberroi"));
         repo.addClient(new Client("carpincho"));
         repo.addClient(new Client("carpincho"));
-//        repo.deleteClient();
+//        repo.deleteClient(2);
+        repo.getClients();
+        repo.getClient(0);
+        repo.updateClient(2, new Client("polla"));
         repo.getClients();
     }
     

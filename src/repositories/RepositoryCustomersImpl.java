@@ -4,11 +4,11 @@ import models.Client;
 
 import java.util.ArrayList;
 
-public class RepositoryCustomersImpl implements RepositoryCustomers{
+public class RepositoryCustomersImpl implements RepositoryCLients{
     private ArrayList<Client> clients = new ArrayList<Client>();
 
     @Override
-    public void getCustomers() {
+    public void getClients() {
         System.out.println("Lista de clientes");
         int idtemp =0;
         for (Client client : clients) {
@@ -18,21 +18,23 @@ public class RepositoryCustomersImpl implements RepositoryCustomers{
     }
 
     @Override
-    public void getCustomer(int id) {
+    public void getClient(int id) {
+        System.out.println(clients.get(id).getName());
     }
 
     @Override
-    public void addCustomer(Client client) {
+    public void addClient(Client client) {
         this.clients.add(client);
     }
 
     @Override
-    public void updateCustomer(Client client) {
-        clients.set(clients.indexOf(client), client);
+    public void updateClient(int id, Client client) {
+        System.out.println("Editando cliente");
+        clients.set(id, client);
     }
 
     @Override
-    public void deleteCustomer(int id) {
+    public void deleteClient(int id) {
         clients.remove(id-1);
     }
 }

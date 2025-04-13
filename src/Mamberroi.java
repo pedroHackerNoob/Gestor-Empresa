@@ -16,16 +16,7 @@ public class Mamberroi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        RepositoryCustomersImpl repo = new RepositoryCustomersImpl();
-        repo.addClient(new Client("Mamberroi"));
-        repo.addClient(new Client("carpincho"));
-        repo.addClient(new Client("carpincho"));
-//        repo.deleteClient(2);
-        repo.getClients();
-        repo.getClient(0);
-        repo.updateClient(2, new Client("polla"));
-        repo.getClients();
+
     }
     
 }

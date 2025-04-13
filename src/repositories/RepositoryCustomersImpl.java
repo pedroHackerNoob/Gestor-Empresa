@@ -4,7 +4,7 @@ import models.Client;
 
 import java.util.ArrayList;
 
-public class RepositoryCustomersImpl implements RepositoryCLients{
+public class RepositoryCustomersImpl implements RepositoryClients {
     private final ArrayList<Client> clients = new ArrayList<>();
 
     @Override

@@ -2,7 +2,7 @@ package repositories;
 
 import models.Client;
 
-public interface RepositoryCLients {
+public interface RepositoryClients {
     public void getClients();
     public void getClient(int id);
     public void addClient(Client client);

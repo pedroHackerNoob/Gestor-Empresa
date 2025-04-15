@@ -5,12 +5,22 @@ public class Supplier {
     private String company;
     private String contract;
     private String address;
+    private int phone;
 
-    public Supplier(String name, String company, String contract, String address) {
+    public Supplier(String name, String company, String contract, String address, int phone) {
         this.name = name;
         this.company = company;
         this.contract = contract;
         this.address = address;
+        this.phone = phone;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public String getCompany() {

@@ -3,10 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 
-import models.Supplier;
-import models.Worker;
-import repositories.RepositorySuppliersImpl;
-import repositories.RepositoryWorkersImpl;
+import models.Service;
+import repositories.RepositoryServicesImpl;
 
 /**
  *
@@ -18,14 +16,13 @@ public class Mamberroi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        RepositoryWorkersImpl repositoryWorkers = new RepositoryWorkersImpl();
-        repositoryWorkers.addWorker(new Worker("pedro", 132, "xyz"));
-        repositoryWorkers.addWorker(new Worker("chato", 132, "xyz"));
-        repositoryWorkers.addWorker(new Worker("rayo", 132, "xyz"));
-//        repositoryWorkers.deleteWorker(1);
-        repositoryWorkers.updateWorker(2, new Worker("troyano", 132, "xyz"));
-//        repositoryWorkers.getWorker(2);
-        repositoryWorkers.getWorkers();
-
+        RepositoryServicesImpl services = new RepositoryServicesImpl();
+        services.addService(new Service("hbo","Family", 360));
+        services.addService(new Service("netflix","Family", 360));
+        services.addService(new Service("disney","Family", 360));
+//        services.deleteService(1);
+        services.updateService(1, new Service("starlink","uwu", 360));
+        services.getService(0);
+        services.getServices();
     }
 }

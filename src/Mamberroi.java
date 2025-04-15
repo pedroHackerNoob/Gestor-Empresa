@@ -4,7 +4,9 @@
  */
 
 import models.Supplier;
+import models.Worker;
 import repositories.RepositorySuppliersImpl;
+import repositories.RepositoryWorkersImpl;
 
 /**
  *
@@ -16,14 +18,14 @@ public class Mamberroi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        RepositorySuppliersImpl suppliers = new RepositorySuppliersImpl();
-        suppliers.addSupplier(new Supplier("pepe","coca","xyz132","c11 av 10",646130120));
-        suppliers.addSupplier(new Supplier("xzibit","coca","xyz132","c11 av 10",646130120));
-        suppliers.addSupplier(new Supplier("fofo","coca","xyz132","c11 av 10",646130120));
-        suppliers.deleteSupplier(2);
-        suppliers.updateSupplier(1,new Supplier("xdfr","coca","xyz132","c11 av 10",646130120));
-        suppliers.getSuppliers();
-        suppliers.getSupplier(0);
-    }
+        RepositoryWorkersImpl repositoryWorkers = new RepositoryWorkersImpl();
+        repositoryWorkers.addWorker(new Worker("pedro", 132, "xyz"));
+        repositoryWorkers.addWorker(new Worker("chato", 132, "xyz"));
+        repositoryWorkers.addWorker(new Worker("rayo", 132, "xyz"));
+//        repositoryWorkers.deleteWorker(1);
+        repositoryWorkers.updateWorker(2, new Worker("troyano", 132, "xyz"));
+//        repositoryWorkers.getWorker(2);
+        repositoryWorkers.getWorkers();
 
+    }
 }

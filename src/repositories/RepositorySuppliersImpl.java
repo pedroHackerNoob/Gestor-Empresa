@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class RepositorySuppliersImpl implements RepositorySuppliers {
     private final ArrayList<Supplier> suppliers = new ArrayList<>();
+
     @Override
     public void getSuppliers() {
         System.out.println("Lista de suplementarios");

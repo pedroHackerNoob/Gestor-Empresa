@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 
-import models.Client;
-import repositories.RepositoryCustomersImpl;
+import models.Product;
+import repositories.RepositoryProductImpl;
 
 /**
  *
@@ -16,7 +16,14 @@ public class Mamberroi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        RepositoryProductImpl repository = new RepositoryProductImpl();
 
+        repository.addProduct(new Product("papa",17.00,90));
+        repository.addProduct(new Product("tomate",30.00,40));
+        repository.addProduct(new Product("zanahoria",12.00,14));
+        repository.getProducts();
+        repository.updateProduct(1, new Product("cilantro",17.00,5));
+        repository.getProducts();
     }
-    
+
 }

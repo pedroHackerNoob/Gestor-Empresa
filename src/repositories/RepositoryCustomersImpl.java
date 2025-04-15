@@ -29,12 +29,12 @@ public class RepositoryCustomersImpl implements RepositoryClients {
 
     @Override
     public void updateClient(int id, Client client) {
-        System.out.println("Editando cliente");
-        clients.set(id, client);
+        System.out.println("\nEditando cliente");
+        this.clients.set(id, client);
     }
 
     @Override
     public void deleteClient(int id) {
-        clients.remove(id-1);
+        this.clients.remove(id);
     }
 }

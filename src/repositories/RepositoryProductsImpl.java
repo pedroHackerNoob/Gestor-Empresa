@@ -12,8 +12,12 @@ public class RepositoryProductsImpl {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("++++++++++++  Lista de Productos  ++++++++++++");
         int idtemp =0;
+
         for (Product product : products) {
-            System.out.println(AritmeticImpl.Subtotal(idtemp,product.getName(),product.getPrice(), product.getStock()));
+            System.out.println(idtemp+" "+AritmeticImpl.descriptionItem(
+                    product.getName(),
+                    product.getPrice(),
+                    product.getStock()));
             idtemp++;
         }
     }

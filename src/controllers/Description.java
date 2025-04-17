@@ -27,23 +27,24 @@ public class Description {
     public static void assignDescription(){
         try {
             System.out.println("Ingrese nombre:");
-//            name = sc.nextLine();
-            System.out.println("Ingrese precio:");
+            name = sc.nextLine();
+//            System.out.println("Ingrese precio:");
+//            System.out.println("Ingrese cantidad:");
+
 //            price = sc.nextDouble();
-            System.out.println("Ingrese cantidad:");
 //            stock = sc.nextInt();
 //            System.out.println("Ingrese opcion:");
 //            option = sc.nextInt();
 
-            name = "cacao";
-            price = 12;
-            stock = 3;
+//            name = "cacao";
+            price = 10;
+            stock = 1;
             option = 1;
             selectSale(option);
-            name = sc.nextLine();
+//            name = sc.nextLine();
         } catch (Exception e) {
             sc.nextLine();
-//            assignDescription();
+            assignDescription();
         }
     }
     public static void selectSale(int option){
@@ -61,8 +62,7 @@ public class Description {
             case 5:
 
             default:
+                break;
         }
-        Menu.getResumen();
-
     }
 }

@@ -26,14 +26,18 @@ public class Menu {
                 Description.getPrice(),
                 Description.getStock()));
 
-        System.out.println("producto:");
+        AritmeticImpl.subtotal(
+                Description.getPrice(),
+                Description.getStock());
+
+        System.out.println("setProductos:");
         String nombre= "carbon";
         double price = 20;
         int stock = 3;
 //        product
-        RepositoryProductsImpl.addProduct(new Product(nombre, price, stock));
-        RepositoryProductsImpl.addProduct(new Product("pechuga", 20, 2));
-        RepositoryProductsImpl.addProduct(new Product("zanahoria", 15, 2));
+//        RepositoryProductsImpl.addProduct(new Product(nombre, price, stock));
+//        RepositoryProductsImpl.addProduct(new Product("pechuga", 20, 2));
+//        RepositoryProductsImpl.addProduct(new Product("zanahoria", 15, 2));
     }
     public static void setServices(){
         RepositoryServicesImpl.addService(new Service(Description.getName(),
@@ -44,15 +48,15 @@ public class Menu {
         double price = 130;
         int stock = 2;
 //        services
-        RepositoryServicesImpl.addService(new Service(nombre,price, stock));
-        RepositoryServicesImpl.addService(new Service("netflix",130, 1));
-        RepositoryServicesImpl.addService(new Service("spotify",100, 3));
+//        RepositoryServicesImpl.addService(new Service(nombre,price, stock));
+//        RepositoryServicesImpl.addService(new Service("netflix",130, 1));
+//        RepositoryServicesImpl.addService(new Service("spotify",100, 3));
     }
 
     public static void getResumen(){
 //        RepositoryClientsImpl.getClient(0);
         RepositoryProductsImpl.getProducts();
-        RepositoryServicesImpl.getServices();
-        AritmeticImpl.Total();
+//        RepositoryServicesImpl.getServices();
+
     }
 }

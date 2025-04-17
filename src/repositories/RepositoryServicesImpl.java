@@ -12,7 +12,6 @@ public class RepositoryServicesImpl{
         System.out.println("++++++++++++  Lista de Servicios  ++++++++++++");
         int idTemp =0;
         for (Service service : services) {
-            System.out.println(AritmeticImpl.Subtotal(idTemp,service.getName(),service.getPrice(),service.getStock()));;
             idTemp++;
         }
     }

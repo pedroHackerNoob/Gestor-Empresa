@@ -17,7 +17,9 @@ public class RepositoryClientsImpl {
     }
 
     public static void getClient(int id) {
-        System.out.println(clients.get(id).getName());
+        System.out.println("#######################");
+        System.out.println("Cliente: "+clients.get(id).getName());
+        System.out.println("#######################");
     }
 
     public static void addClient(Client client) {

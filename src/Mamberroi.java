@@ -6,6 +6,7 @@
 
 import models.Client;
 import repositories.RepositoryClientsImpl;
+import utilities.Menu;
 
 /**
  *
@@ -18,7 +19,6 @@ public class Mamberroi {
      */
     public static void main(String[] args) {
 //
-        RepositoryClientsImpl.addClient(new Client("Mamberroi"));
-        RepositoryClientsImpl.getClients();
+        Menu.menuClient();
     }
 }

@@ -1,5 +1,6 @@
 package repositories;
 
+import controllers.AritmeticImpl;
 import models.Service;
 
 import java.util.ArrayList;
@@ -7,13 +8,11 @@ import java.util.ArrayList;
 public class RepositoryServicesImpl{
      private static final ArrayList<Service> services = new ArrayList<>();
     public static void getServices() {
-        System.out.println("Lista de Servicos");
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("++++++++++++  Lista de Servicios  ++++++++++++");
         int idTemp =0;
         for (Service service : services) {
-            System.out.println(idTemp+" "
-                    +service.getName()+" "
-                    +service.getPrice()+" "
-                    +service.getPack());
+            System.out.println(AritmeticImpl.Subtotal(idTemp,service.getName(),service.getPrice(),service.getStock()));;
             idTemp++;
         }
     }
@@ -23,7 +22,7 @@ public class RepositoryServicesImpl{
     }
 
     public static void getService(int id) {
-        System.out.println(services.get(id).getName()+" "+services.get(id).getPrice()+" "+services.get(id).getPack());
+        System.out.println(services.get(id).getName()+" "+services.get(id).getPrice()+" "+services.get(id).getStock());
     }
 
     public static void updateService(int id, Service service) {

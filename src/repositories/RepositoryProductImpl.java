@@ -1,5 +1,6 @@
 package repositories;
 
+import controllers.AritmeticImpl;
 import models.Product;
 
 import java.util.ArrayList;
@@ -8,10 +9,11 @@ public class RepositoryProductImpl {
     private static final ArrayList<Product> products = new ArrayList<>();
 
     public static void getProducts() {
-        System.out.println("Lista de productos");
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("++++++++++++  Lista de Productos  ++++++++++++");
         int idtemp =0;
         for (Product product : products) {
-            System.out.println(idtemp+" "+product.getName()+" Precio: "+product.getPrice()+" Stock:"+product.getStock());
+            System.out.println(AritmeticImpl.Subtotal(idtemp,product.getName(),product.getPrice(), product.getStock()));
             idtemp++;
         }
     }

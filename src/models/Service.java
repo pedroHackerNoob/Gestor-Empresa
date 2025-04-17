@@ -2,13 +2,13 @@ package models;
 
 public class Service {
     String name;
-    String pack;
-    int price;
+    double price;
+    int stock;
 
-    public Service(String name, String pack, int price) {
+    public Service(String name, double price, int stock) {
         this.name = name;
-        this.pack = pack;
         this.price = price;
+        this.stock = stock;
     }
 
     public String getName() {
@@ -19,19 +19,19 @@ public class Service {
         this.name = name;
     }
 
-    public String getPack() {
-        return pack;
-    }
-
-    public void setPack(String pack) {
-        this.pack = pack;
-    }
-
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

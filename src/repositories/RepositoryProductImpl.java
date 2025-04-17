@@ -4,11 +4,10 @@ import models.Product;
 
 import java.util.ArrayList;
 
-public class RepositoryProductImpl implements RepositoryProduct {
-    private final ArrayList<Product> products = new ArrayList<>();
+public class RepositoryProductImpl {
+    private static final ArrayList<Product> products = new ArrayList<>();
 
-    @Override
-    public void getProducts() {
+    public static void getProducts() {
         System.out.println("Lista de productos");
         int idtemp =0;
         for (Product product : products) {
@@ -17,26 +16,22 @@ public class RepositoryProductImpl implements RepositoryProduct {
         }
     }
 
-    @Override
-    public void getProduct(int id) {
+    public static void getProduct(int id) {
         System.out.println(products.get(id).getName()
                 +" "+products.get(id).getPrice()
                 +" "+products.get(id).getStock());
     }
 
-    @Override
-    public void addProduct(Product product) {
-        this.products.add(product);
+    public static void addProduct(Product product) {
+        products.add(product);
     }
 
-    @Override
-    public void updateProduct(int id, Product product) {
+    public static void updateProduct(int id, Product product) {
         System.out.println("\nEditando Producto");
-        this.products.set(id, product);
+        products.set(id, product);
     }
 
-    @Override
-    public void deleteProduct(int product) {
-        this.products.remove(product);
+    public static void deleteProduct(int product) {
+        products.remove(product);
     }
 }

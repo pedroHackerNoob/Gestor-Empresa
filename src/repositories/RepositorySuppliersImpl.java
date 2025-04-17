@@ -4,11 +4,10 @@ import models.Supplier;
 
 import java.util.ArrayList;
 
-public class RepositorySuppliersImpl implements RepositorySuppliers {
-    private final ArrayList<Supplier> suppliers = new ArrayList<>();
+public class RepositorySuppliersImpl {
+    private static final ArrayList<Supplier> suppliers = new ArrayList<>();
 
-    @Override
-    public void getSuppliers() {
+    public static void getSuppliers() {
         System.out.println("Lista de suplementarios");
         int idtemp =0;
         for (Supplier supplier : suppliers) {
@@ -22,26 +21,22 @@ public class RepositorySuppliersImpl implements RepositorySuppliers {
         }
     }
 
-    @Override
-    public void getSupplier(int id) {
+    public static void getSupplier(int id) {
         System.out.println(
                 suppliers.get(id).getCompany()
                 +" "+suppliers.get(id).getContract()
                 +" "+suppliers.get(id).getPhone());
     }
 
-    @Override
-    public void addSupplier(Supplier supplier) {
-        this.suppliers.add(supplier);
+    public static void addSupplier(Supplier supplier) {
+        suppliers.add(supplier);
     }
 
-    @Override
-    public void updateSupplier(int id, Supplier supplier) {
-        this.suppliers.set(id, supplier);
+    public static void updateSupplier(int id, Supplier supplier) {
+        suppliers.set(id, supplier);
     }
 
-    @Override
-    public void deleteSupplier(int id) {
-        this.suppliers.remove(id);
+    public static void deleteSupplier(int id) {
+        suppliers.remove(id);
     }
 }

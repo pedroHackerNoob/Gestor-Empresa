@@ -5,7 +5,7 @@ import models.Product;
 
 import java.util.ArrayList;
 
-public class RepositoryProductImpl {
+public class RepositoryProductsImpl {
     private static final ArrayList<Product> products = new ArrayList<>();
 
     public static void getProducts() {

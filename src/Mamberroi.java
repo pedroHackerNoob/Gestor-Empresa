@@ -4,9 +4,7 @@
  */
 
 
-import models.Client;
-import repositories.RepositoryClientsImpl;
-import utilities.Menu;
+import controllers.Description;
 
 /**
  *
@@ -19,6 +17,7 @@ public class Mamberroi {
      */
     public static void main(String[] args) {
 //
-        Menu.menuClient();
+//        Menu.menuClient();
+        Description.assignDescription();
     }
 }

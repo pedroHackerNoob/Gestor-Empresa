@@ -11,7 +11,9 @@ public class RepositoryClientsImpl {
         System.out.println("Lista de clientes");
         int idtemp =0;
         for (Client client : clients) {
-            System.out.println(idtemp+" "+client.getName());
+            System.out.println("##########################");
+            System.out.println("### "+idtemp+" Cliente: "+client.getName()+" ##");
+            System.out.println("##########################");
             idtemp++;
         }
     }

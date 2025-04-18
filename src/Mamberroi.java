@@ -7,6 +7,7 @@
 import controllers.AritmeticImpl;
 import controllers.Description;
 import repositories.RepositoryProductsImpl;
+import utilities.Menu;
 
 /**
  *
@@ -19,15 +20,15 @@ public class Mamberroi {
      */
     public static void main(String[] args) {
 //
-//        Menu.menuClient();
-        for (int i = 0; i <= 3; i++) {
-            System.out.println(i);
-            Description.assignDescription();
+        Description.assignDescriptionClient();
+
+        for (int i = 0; i <= 2; i++) {
+            System.out.println("Iteracion "+i);
+            Description.assignDescriptionProduct();
             RepositoryProductsImpl.getProducts();
             AritmeticImpl.totalResumen();
-            AritmeticImpl.changeMoney(200);
         }
-
+        Menu.getResumen();
 
     }
 }

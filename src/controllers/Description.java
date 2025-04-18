@@ -9,34 +9,33 @@ public class Description {
     private static String name;
     private static double price;
     private static int stock;
-    private static int option;
 
-
+    public static boolean responseLoop(){
+        System.out.println("\n////////////////////////////");
+        System.out.println("desea agregar otro producto?");
+        String responseText = sc.nextLine();
+        return !responseText.isEmpty();
+    }
     public static void assignDescriptionClient() {
-        System.out.println("Ingrese nombre:");
-//        name = sc.nextLine();
         name = "pablo";
+        System.out.println("Ingrese nombre de cliente: "+name);
+//        name = sc.nextLine();
         Menu.menuClient(name);
     }
     public static void assignDescriptionProduct(){
         try {
-            System.out.println("Ingrese nombre:");
+            System.out.println("Ingrese nombre de producto: ");
             name = sc.nextLine();
 //            System.out.println("Ingrese precio:");
-//            System.out.println("Ingrese cantidad:");
+            price = 10;
 //            price = sc.nextDouble();
+//            System.out.println("Ingrese cantidad:");
+            stock = 1;
 //            stock = sc.nextInt();
 //            System.out.println("Ingrese opcion:");
+            int option = 1;
 //            option = sc.nextInt();
 
-//            name = "cacao";
-            price = 10;
-            stock = 1;
-
-            if (stock <0){
-
-            }
-            option = 1;
             selectSale(option);
 //            name = sc.nextLine();
         } catch (Exception e) {
@@ -62,15 +61,4 @@ public class Description {
         }
     }
 
-    public static String getName() {
-        return name;
-    }
-
-    public static double getPrice() {
-        return price;
-    }
-
-    public static int getStock() {
-        return stock;
-    }
 }

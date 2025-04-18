@@ -1,16 +1,14 @@
 package utilities;
 
 import controllers.AritmeticImpl;
-import controllers.Description;
 import models.Client;
 import models.Product;
-import models.Service;
 import repositories.RepositoryClientsImpl;
 import repositories.RepositoryProductsImpl;
-import repositories.RepositoryServicesImpl;
 
 
 public class Menu {
+
     public static void menuClient(String name){
         RepositoryClientsImpl.addClient(new Client(name));
     }
@@ -21,6 +19,7 @@ public class Menu {
     }
 
     public static void getResumen(){
+        System.out.println("\n\n\n\n");
         RepositoryClientsImpl.getClients();
         RepositoryProductsImpl.getProducts();
         AritmeticImpl.totalResumen();

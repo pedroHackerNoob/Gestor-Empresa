@@ -41,11 +41,15 @@ public class Description {
     }
     public static void assignRemoveProduct(){
         try {
-            int idTemp = sc.nextInt();
-            RepositoryProductsImpl.deleteProduct(idTemp);
+            int idTemp;
+//            idTemp = sc.nextInt();
+            idTemp = 1;
+            Menu.deleteProduct(idTemp);
+            idTemp = 0;
+            Menu.deleteProduct(idTemp);
         } catch (Exception e) {
-//            sc.nextLine();
-//            assignRemoveProduct();
+            sc.nextLine();
+            assignRemoveProduct();
         }
     }
     public static void selectSale(){
@@ -61,11 +65,12 @@ public class Description {
                 Menu.addProduct("carne", 10, 1);
                 break;
             case 2:
-
+                assignRemoveProduct();
                 break;
             default:
                 break;
         }
+        assignRemoveProduct();
         RepositoryProductsImpl.getProducts();
         AritmeticImpl.changeMoney(200);
     }

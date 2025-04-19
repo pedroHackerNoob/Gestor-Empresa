@@ -18,25 +18,23 @@ public class Description {
         return !responseText.isEmpty();
     }
     public static void assignDescriptionClient() {
-        name = "pablo";
-        System.out.println("Ingrese nombre de cliente: "+name);
+        String clientname = "pablo";
+        System.out.println("Ingrese nombre de cliente: "+clientname);
 //        name = sc.nextLine();
-        Menu.menuClient(name);
+        Menu.menuClient(clientname);
     }
     public static void assignDescriptionProduct(){
         try {
             System.out.println("Ingrese nombre de producto: ");
-            name = sc.nextLine();
+//            name = sc.nextLine();
 //            System.out.println("Ingrese precio:");
-            price = 10;
 //            price = sc.nextDouble();
 //            System.out.println("Ingrese cantidad:");
-            stock = 1;
 //            stock = sc.nextInt();
-//            System.out.println("Ingrese opcion:");
-            int option = 1;
-//            option = sc.nextInt();
 
+            name= "paco";
+            price = 100;
+            stock = 1;
         } catch (Exception e) {
             assignDescriptionProduct();
         }
@@ -50,21 +48,26 @@ public class Description {
 //            assignRemoveProduct();
         }
     }
-    public static void selectSale(int option){
+    public static void selectSale(){
+        System.out.println("Ingrese opcion:");
+        int option =1;
+//        option = sc.nextInt();
+
         switch (option){
             case 1:
+                assignDescriptionProduct();
                 Menu.addProduct(name, price, stock);
+                Menu.addProduct("pollo", 50, 1);
+                Menu.addProduct("carne", 70, 2);
                 break;
             case 2:
 
                 break;
-            case 3:
-            case 4:
-            case 5:
-
             default:
                 break;
         }
+        RepositoryProductsImpl.getProducts();
+        AritmeticImpl.getTotalResumen();
     }
 
 }

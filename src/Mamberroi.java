@@ -5,6 +5,7 @@
 
 
 import controllers.AritmeticImpl;
+import controllers.Description;
 import repositories.RepositoryProductsImpl;
 import utilities.Menu;
 import utilities.RunMenu;
@@ -30,7 +31,7 @@ public class Mamberroi {
         System.out.println("testing Delete");
 //        Menu.deleteProduct();
 
-//        Menu.deleteProduct(3);
+        Menu.deleteProduct(3);
         RepositoryProductsImpl.getProducts();
         AritmeticImpl.getTotalResumen();
 //        AritmeticImpl.changeMoney(200);
@@ -39,7 +40,6 @@ public class Mamberroi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        testAdd();
-        testDelete();
+        Description.selectSale();
     }
 }

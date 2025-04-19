@@ -12,27 +12,9 @@ public class RunMenu {
     private static void bucleAdd(){
         boolean turn = true;
         while (turn){
-            Description.assignDescriptionProduct();
-
-            RepositoryProductsImpl.getProducts();
-            AritmeticImpl.getTotalResumen();
             if (!Description.responseLoop()){
                 turn = false;
             }
         }
     }
-    private static void bucleRemove(){
-        boolean turn = true;
-        while (turn){
-            System.out.println("Ingrese ID para eliminar");
-            Description.assignRemoveProduct();
-            RepositoryProductsImpl.getProducts();
-            AritmeticImpl.getTotalResumen();
-            if (!Description.responseLoop()){
-                turn = false;
-            }
-        }
-    }
-    private static void bucleUpdate(){}
-    private static void bucleFind(){}
 }

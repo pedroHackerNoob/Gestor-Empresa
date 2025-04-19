@@ -30,11 +30,10 @@ public class Mamberroi {
         System.out.println("testing Delete");
 //        Menu.deleteProduct();
 
-        Menu.deleteProduct(3);
-        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+//        Menu.deleteProduct(3);
         RepositoryProductsImpl.getProducts();
         AritmeticImpl.getTotalResumen();
-        AritmeticImpl.changeMoney(200);
+//        AritmeticImpl.changeMoney(200);
     }
     /**
      * @param args the command line arguments

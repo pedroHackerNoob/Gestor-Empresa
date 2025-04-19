@@ -39,19 +39,19 @@ public class RepositoryProductsImpl {
         System.out.println("##########################################");
         int tamanio = products.size();
         int idtemp = tamanio -id;
-        if(tamanio==1 || idtemp ==1) {
-            System.out.println("producto cancelado");
-//            se tiene que cambiar el subtotal
-            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
-            RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
-
-        } else if (id > tamanio) {
+        if (id >= tamanio) {
             System.out.println(tamanio+" imposible eliminar el producto: "+id);
 
         } else {
+            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
+            if(tamanio==1 || idtemp ==1) {
+                System.out.println("producto cancelado");
+//            se tiene que cambiar el subtotal
+                RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
+
+            }
             System.out.println("Nombre: "+products.get(id).getName()+" eliminado "+id);
             products.remove(id);
-            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
         }
 
 

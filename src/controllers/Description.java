@@ -37,7 +37,6 @@ public class Description {
             int option = 1;
 //            option = sc.nextInt();
 
-//            name = sc.nextLine();
         } catch (Exception e) {
             assignDescriptionProduct();
         }
@@ -54,9 +53,10 @@ public class Description {
     public static void selectSale(int option){
         switch (option){
             case 1:
-//                producto
+                Menu.addProduct(name, price, stock);
                 break;
             case 2:
+
                 break;
             case 3:
             case 4:

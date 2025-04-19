@@ -33,7 +33,7 @@ public class Description {
 //            stock = sc.nextInt();
 
             name= "paco";
-            price = 100;
+            price = 10;
             stock = 1;
         } catch (Exception e) {
             assignDescriptionProduct();
@@ -57,8 +57,8 @@ public class Description {
             case 1:
                 assignDescriptionProduct();
                 Menu.addProduct(name, price, stock);
-                Menu.addProduct("pollo", 50, 1);
-                Menu.addProduct("carne", 70, 2);
+                Menu.addProduct("pollo", 10, 1);
+                Menu.addProduct("carne", 10, 1);
                 break;
             case 2:
 
@@ -67,7 +67,7 @@ public class Description {
                 break;
         }
         RepositoryProductsImpl.getProducts();
-        AritmeticImpl.getTotalResumen();
+        AritmeticImpl.changeMoney(200);
     }
 
 }

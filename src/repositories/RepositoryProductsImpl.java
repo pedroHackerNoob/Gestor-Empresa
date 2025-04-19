@@ -14,10 +14,7 @@ public class RepositoryProductsImpl {
         int idtemp =0;
 
         for (Product product : products) {
-            System.out.println(idtemp+" "+AritmeticImpl.descriptionItem(
-                    product.getName(),
-                    product.getPrice(),
-                    product.getStock()));
+            System.out.println("ID: "+idtemp+" "+AritmeticImpl.setDescriptionItem(product));
             idtemp++;
         }
     }
@@ -25,7 +22,8 @@ public class RepositoryProductsImpl {
     public static void getProduct(int id) {
         System.out.println(products.get(id).getName()
                 +" "+products.get(id).getPrice()
-                +" "+products.get(id).getStock());
+                +" "+products.get(id).getStock()
+                +" "+products.get(id).getSubTotal());
     }
 
     public static void addProduct(Product product) {
@@ -37,7 +35,26 @@ public class RepositoryProductsImpl {
         products.set(id, product);
     }
 
-    public static void deleteProduct(int product) {
-        products.remove(product);
+    public static void deleteProduct(int id) {
+        System.out.println("##########################################");
+        int tamanio = products.size();
+        int idtemp = tamanio -id;
+        if(tamanio==1 || idtemp ==1) {
+            System.out.println("producto cancelado");
+//            se tiene que cambiar el subtotal
+            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
+            RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
+
+        } else if (id > tamanio) {
+            System.out.println(tamanio+" imposible eliminar el producto: "+id);
+
+        } else {
+            System.out.println("Nombre: "+products.get(id).getName()+" eliminado "+id);
+            products.remove(id);
+            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
+        }
+
+
+
     }
 }

@@ -1,5 +1,6 @@
 package controllers;
 
+import repositories.RepositoryProductsImpl;
 import utilities.Menu;
 
 import java.util.Scanner;
@@ -12,7 +13,7 @@ public class Description {
 
     public static boolean responseLoop(){
         System.out.println("\n////////////////////////////");
-        System.out.println("desea agregar otro producto?");
+        System.out.println("Desea repetir la operacion?");
         String responseText = sc.nextLine();
         return !responseText.isEmpty();
     }
@@ -36,21 +37,26 @@ public class Description {
             int option = 1;
 //            option = sc.nextInt();
 
-            selectSale(option);
 //            name = sc.nextLine();
         } catch (Exception e) {
-            sc.nextLine();
             assignDescriptionProduct();
+        }
+    }
+    public static void assignRemoveProduct(){
+        try {
+            int idTemp = sc.nextInt();
+            RepositoryProductsImpl.deleteProduct(idTemp);
+        } catch (Exception e) {
+//            sc.nextLine();
+//            assignRemoveProduct();
         }
     }
     public static void selectSale(int option){
         switch (option){
             case 1:
 //                producto
-                Menu.setProducts(name, price, stock);
                 break;
             case 2:
-//                service
                 break;
             case 3:
             case 4:

@@ -10,6 +10,7 @@ public class Description {
     private static String name;
     private static double price;
     private static int stock;
+    private static int idSelect;
 
     public static boolean responseLoop(){
         System.out.println("\n////////////////////////////");
@@ -26,51 +27,47 @@ public class Description {
     public static void assignDescriptionProduct(){
         try {
             System.out.println("Ingrese nombre de producto: ");
-//            name = sc.nextLine();
-//            System.out.println("Ingrese precio:");
-//            price = sc.nextDouble();
-//            System.out.println("Ingrese cantidad:");
-//            stock = sc.nextInt();
-
-            name= "paco";
-            price = 10;
-            stock = 1;
+            name = sc.nextLine();
+            System.out.println("Ingrese precio:");
+            price = sc.nextDouble();
+            System.out.println("Ingrese cantidad:");
+            stock = sc.nextInt();
         } catch (Exception e) {
             assignDescriptionProduct();
         }
     }
     public static void assignRemoveProduct(){
         try {
-            int idTemp;
-//            idTemp = sc.nextInt();
-            idTemp = 1;
-            Menu.deleteProduct(idTemp);
-            idTemp = 0;
-            Menu.deleteProduct(idTemp);
+            System.out.println("Ingrese id del producto: ");
+            idSelect = sc.nextInt();
         } catch (Exception e) {
             sc.nextLine();
             assignRemoveProduct();
         }
     }
-    public static void selectSale(){
-        System.out.println("Ingrese opcion:");
-        int option =1;
+    public static void selectSale(int option){
+//        int option;
+//        System.out.println("Ingrese opcion:");
 //        option = sc.nextInt();
 
         switch (option){
             case 1:
-                assignDescriptionProduct();
-                Menu.addProduct(name, price, stock);
+//                assignDescriptionProduct();
+//                Menu.addProduct(name, price, stock);
                 Menu.addProduct("pollo", 10, 1);
                 Menu.addProduct("carne", 10, 1);
+                System.out.println("xd "+option);
+                selectSale(2);
                 break;
             case 2:
-                assignRemoveProduct();
+                System.out.println("xdd 2");
+//                assignDescriptionClient();
+//                Menu.deleteProduct(idDelete);
+                Menu.deleteProduct(1);
                 break;
             default:
                 break;
         }
-        assignRemoveProduct();
         RepositoryProductsImpl.getProducts();
         AritmeticImpl.changeMoney(200);
     }

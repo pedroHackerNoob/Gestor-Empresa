@@ -13,8 +13,8 @@ public class Menu {
         RepositoryClientsImpl.addClient(new Client(name));
     }
     public static void addProduct(String name, double price, int stock){
-        AritmeticImpl.setSubtotal(price, stock);
         RepositoryProductsImpl.addProduct(new Product(name, price, stock));
+        AritmeticImpl.setSubtotal(price, stock);
     }
     public static void deleteProduct(int id){
         RepositoryProductsImpl.deleteProduct(id);

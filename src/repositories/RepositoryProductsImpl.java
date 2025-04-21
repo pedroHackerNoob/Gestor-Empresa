@@ -14,7 +14,7 @@ public class RepositoryProductsImpl {
         int idtemp =0;
 
         for (Product product : products) {
-            System.out.println("ID: "+idtemp+" "+AritmeticImpl.setDescriptionItem(product));
+            System.out.println("ID:\t"+idtemp+"\t"+AritmeticImpl.setDescriptionItem(product));
             idtemp++;
         }
     }
@@ -27,6 +27,9 @@ public class RepositoryProductsImpl {
     }
 
     public static void addProduct(Product product) {
+        System.out.println("-----------------------------------------------");
+        System.out.println("-------------- Producto Agregado  -------------");
+        System.out.println(product.getName()+"\t precio: $"+product.getPrice()+"\t cantidad: "+product.getStock()+"\t subtotal: $"+product.getSubTotal());
         products.add(product);
     }
 
@@ -50,7 +53,7 @@ public class RepositoryProductsImpl {
                 RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
 
             }
-            System.out.println("Nombre: "+products.get(id).getName()+" eliminado "+id);
+            System.out.println("ID: "+id+"\tNombre: "+products.get(id).getName()+"\t eliminado");
             products.remove(id);
         }
 

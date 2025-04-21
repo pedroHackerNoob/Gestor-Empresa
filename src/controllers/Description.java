@@ -55,12 +55,11 @@ public class Description {
 //                assignDescriptionProduct();
 //                Menu.addProduct(name, price, stock);
                 Menu.addProduct("pollo", 10, 1);
-                Menu.addProduct("carne", 10, 1);
-                System.out.println("xd "+option);
-                selectSale(2);
+
+//                Menu.addProduct("ree", 10, 1);
+//                selectSale(2);
                 break;
             case 2:
-                System.out.println("xdd 2");
 //                assignDescriptionClient();
 //                Menu.deleteProduct(idDelete);
                 Menu.deleteProduct(1);
@@ -68,8 +67,9 @@ public class Description {
             default:
                 break;
         }
-        RepositoryProductsImpl.getProducts();
+//        RepositoryProductsImpl.getProducts();
         AritmeticImpl.changeMoney(200);
+        sc.close();
     }
 
 }

@@ -52,15 +52,18 @@ public class Description {
 
         switch (option){
             case 1:
+                System.out.println("+--------------------------------------------------------------------+");
+                System.out.println("|                       Producto Agregado                            |");
 //                assignDescriptionProduct();
 //                Menu.addProduct(name, price, stock);
                 Menu.addProduct("pollo", 10, 1);
-
-//                Menu.addProduct("ree", 10, 1);
-//                selectSale(2);
+                Menu.addProduct("salchicha", 10, 1);
+                Menu.addProduct("cerdo", 10, 1);
+                Menu.addProduct("pavo", 10, 1);
+                Menu.addProduct("res", 10, 1);
+                selectSale(2);
                 break;
             case 2:
-//                assignDescriptionClient();
 //                Menu.deleteProduct(idDelete);
                 Menu.deleteProduct(1);
                 break;

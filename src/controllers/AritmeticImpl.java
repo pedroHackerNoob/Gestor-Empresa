@@ -19,9 +19,10 @@ public class AritmeticImpl {
                 +"\t| subtotal: $"+product.getSubTotal();
 
     }
-    public static double setSubtotal(double price, int stock) {
-        if (stock<1){
 
+    public static double setSubtotal(double price, int stock) {
+        if (stock<1 || price<1) {
+            System.out.println("Error: no valido");
         }else {
             subtotal = price * stock;
             setTotal(subtotal);
@@ -31,21 +32,23 @@ public class AritmeticImpl {
         getTotalResumen();
         return subtotal;
     }
+
     public static void getTotalResumen(){
         System.out.println("Total a pagar: $"+getTotal());
     }
-    public static void changeMoney(double change){
-        System.out.println("+--------------------------------------------------------------------+");
-        System.out.println("|                       Resumen de carrito                           |");
-        RepositoryProductsImpl.getProducts();
-        getTotalResumen();
-        System.out.println("+--------------------------------------------------------------------+");
-        System.out.println("|                         Metodo de pago                             |");
-        System.out.println("+--------------------------------------------------------------------+");
-        System.out.println("Pago: $"+change);
-        change-=total;
 
-        if(change>0){
+    public static void changeMoney(double change){
+
+        if(change>= total){
+            System.out.println("+--------------------------------------------------------------------+");
+            System.out.println("|                       Resumen de carrito                           |");
+            RepositoryProductsImpl.getProducts();
+            getTotalResumen();
+            System.out.println("+--------------------------------------------------------------------+");
+            System.out.println("|                         Metodo de pago                             |");
+            System.out.println("+--------------------------------------------------------------------+");
+            System.out.println("Pago: $"+change);
+            change-=total;
             System.out.println("cambio: $"+change);
         }else {
             System.out.println("no tiene dinero suficiente");
@@ -55,9 +58,11 @@ public class AritmeticImpl {
     public static int getIdTemp() {
         return idTemp;
     }
+
     public static void setIdTemp() {
         ++idTemp;
     }
+
     public static void setTotal(double subtotal) {
         total += subtotal;
     }

@@ -4,25 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI action added in addButton">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/Mamberroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/Mamberroi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/RunMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/RunMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mamberroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mamberroi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Description.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/RunMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/RunMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +101,7 @@
       <workItem from="1745221112095" duration="7116000" />
       <workItem from="1745273242167" duration="1891000" />
       <workItem from="1745375311431" duration="4566000" />
+      <workItem from="1745387263945" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -163,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745378430509</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel">
+      <option name="closed" value="true" />
+      <created>1745385269688</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745385269688</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,20 +181,10 @@
     <MESSAGE value="demo v1 tests was added in selectSale as the case 1/2" />
     <MESSAGE value="demo v1 format was added" />
     <MESSAGE value="demo v2 UI action added in addButton" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v2 UI action added in addButton" />
+    <MESSAGE value="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controllers/Description.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

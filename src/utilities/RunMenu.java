@@ -10,11 +10,6 @@ public class RunMenu {
     }
 
     private static void bucleAdd(){
-        boolean turn = true;
-        while (turn){
-            if (!Description.responseLoop()){
-                turn = false;
-            }
-        }
+
     }
 }

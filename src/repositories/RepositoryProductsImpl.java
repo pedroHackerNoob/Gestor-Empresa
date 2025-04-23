@@ -58,7 +58,7 @@ public class RepositoryProductsImpl {
                 RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
 
             }
-
+            AritmeticImpl.getTotalResumen();
             products.remove(id);
         }
 

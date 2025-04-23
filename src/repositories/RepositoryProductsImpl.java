@@ -32,7 +32,6 @@ public class RepositoryProductsImpl {
         System.out.println("+--------------------------------------------------------------------+");
         System.out.println("|\t"+product.getName()+"\t precio: $"+product.getPrice()+"\t cantidad: "+product.getStock()+"\t subtotal: $"+product.getSubTotal());
         System.out.println("+--------------------------------------------------------------------+");
-
         products.add(product);
     }
 

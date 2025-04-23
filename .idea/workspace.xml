@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI action added in addButton" />
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI action added in addButton">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mamberroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mamberroi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Menu.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,33 +48,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Gestion Negocio.executor": "Run",
-    "Application.Gestion.executor": "Run",
-    "Application.Home.executor": "Run",
-    "Application.Mamberroi.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Gestion Negocio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Gestion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Home.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Mamberroi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Gestion" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Mamberroi" />

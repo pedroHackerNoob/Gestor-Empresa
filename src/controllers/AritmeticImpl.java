@@ -4,14 +4,12 @@ import models.Product;
 import repositories.RepositoryProductsImpl;
 
 public class AritmeticImpl {
-
+    private static int idTemp =0;
     private static double total=0;
+    private static double subtotal = 0;
 
     public static void discountTotal(double discount) {
         total-=discount;
-    }
-    public static double getTotal() {
-        return total;
     }
     public static String setDescriptionItem(Product product){
         System.out.println("+-------+-------+-------------------+---------------+----------------+");
@@ -21,10 +19,17 @@ public class AritmeticImpl {
                 +"\t| subtotal: $"+product.getSubTotal();
 
     }
-    public static void setSubtotal(double price, int stock) {
-        double subtotal = price * stock;
-        total += subtotal;
+    public static double setSubtotal(double price, int stock) {
+        if (stock<1){
+
+        }else {
+            subtotal = price * stock;
+            setTotal(subtotal);
+            setIdTemp();
+        }
+
         getTotalResumen();
+        return subtotal;
     }
     public static void getTotalResumen(){
         System.out.println("Total a pagar: $"+getTotal());
@@ -46,5 +51,17 @@ public class AritmeticImpl {
             System.out.println("no tiene dinero suficiente");
         }
         System.out.println("+--------------------------------------------------------------------+");
+    }
+    public static int getIdTemp() {
+        return idTemp;
+    }
+    public static void setIdTemp() {
+        ++idTemp;
+    }
+    public static void setTotal(double subtotal) {
+        total += subtotal;
+    }
+    public static double getTotal() {
+        return total;
     }
 }

@@ -1,5 +1,6 @@
 package utilities;
 
+import SwingUI.Home;
 import controllers.AritmeticImpl;
 import models.Client;
 import models.Product;
@@ -14,7 +15,7 @@ public class Menu {
     }
     public static void addProduct(String name, double price, int stock){
         RepositoryProductsImpl.addProduct(new Product(name, price, stock));
-        AritmeticImpl.setSubtotal(price, stock);
+//        AritmeticImpl.setSubtotal(price, stock);
     }
     public static void deleteProduct(int id){
         RepositoryProductsImpl.deleteProduct(id);

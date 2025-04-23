@@ -4,6 +4,7 @@
  */
 package SwingUI;
 
+import controllers.AritmeticImpl;
 import controllers.Description;
 import utilities.Menu;
 
@@ -36,7 +37,7 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        totalLabel = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         nameTextField = new javax.swing.JTextField();
@@ -68,8 +69,8 @@ public class Home extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         jLabel3.setText("cantidad:");
 
-        jLabel4.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
-        jLabel4.setText("$ 00.00");
+        totalLabel.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
+        totalLabel.setText("$ 00.00");
 
         jLabel5.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         jLabel5.setText("Tyler");
@@ -204,7 +205,7 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(totalLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(moneyTextField)
                             .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(659, Short.MAX_VALUE))
@@ -250,7 +251,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel4))
+                    .addComponent(totalLabel))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -273,32 +274,37 @@ public class Home extends javax.swing.JFrame {
         try {
             nameTextField.setText("pollo");
             priceTextField.setText("10");
-            stockTextField.setText("1");
-            if( nameTextField.getText().isEmpty() && priceTextField.getText().isEmpty()){
+            if( nameTextField.getText().isEmpty() || priceTextField.getText().isEmpty() || stockTextField.getText().isEmpty()){
                 avisoAddjLabel13.setForeground( Color.red);
                 avisoAddjLabel13.setText("Ingrese valores validos!");
                 JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
             }else {
+//                get texts field
                 String name = nameTextField.getText();
                 String priceSt = priceTextField.getText();
                 String stockSt = stockTextField.getText();
-
+//                convert variables
                 double price = Double.parseDouble(priceTextField.getText());
                 int stock = Integer.parseInt(stockTextField.getText());
-
-                //                falta
-                String[] product = { "null",name,priceSt,stockSt, "null"};
-
-                DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel() ;
-
-                productTableModel.addRow(product);
-
+//                condition if stock is 0
                 if (stock <1){
                     stock = 1;
                 }
+//                add item to software
                 Menu.addProduct(name, price, stock);
+//                add item to table
+                String[] product = {String.valueOf(AritmeticImpl.getIdTemp()),
+                        name,priceSt,stockSt,
+                        String.valueOf(AritmeticImpl.setSubtotal(price, stock))};
+//                create statement table
+                DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel() ;
+                productTableModel.addRow(product);
+                //                add total to label
+                String total = String.valueOf(AritmeticImpl.getTotal());
+                totalLabel.setText("$"+total);
 
-                JOptionPane.showMessageDialog(null, "El producto se ha agregado correctamente");
+
+//                JOptionPane.showMessageDialog(null, "El producto se ha agregado correctamente");
 
             }
         } catch (Exception e) {
@@ -373,7 +379,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -386,5 +391,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField priceTextField;
     private javax.swing.JTable productsTable;
     private javax.swing.JTextField stockTextField;
+    private javax.swing.JLabel totalLabel;
     // End of variables declaration//GEN-END:variables
 }

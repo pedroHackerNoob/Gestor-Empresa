@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI action added in addButton" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Mamberroi.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vxqkhsx5CF19we7qr9Dx3oZqZ0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Gestion Negocio.executor": "Run",
+    "Application.Gestion.executor": "Run",
+    "Application.Home.executor": "Run",
+    "Application.Mamberroi.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Gestion" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Mamberroi" />
+      <module name="GestionNegocio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="" />
+      <created>1745097221215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745097221215</updated>
+      <workItem from="1745097224867" duration="156000" />
+      <workItem from="1745097419502" duration="2057000" />
+      <workItem from="1745128812635" duration="12000" />
+      <workItem from="1745187711689" duration="1118000" />
+      <workItem from="1745221112095" duration="7116000" />
+      <workItem from="1745273242167" duration="1891000" />
+      <workItem from="1745375311431" duration="4566000" />
+    </task>
+    <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
+      <option name="closed" value="true" />
+      <created>1745098366134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745098366134</updated>
+    </task>
+    <task id="LOCAL-00002" summary="demo v1 assignDescriptionProduct was added in selectSale as case 1">
+      <option name="closed" value="true" />
+      <created>1745098586891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745098586891</updated>
+    </task>
+    <task id="LOCAL-00003" summary="demo v1 assignRemoveProduct was added in selectSale as case 2">
+      <option name="closed" value="true" />
+      <created>1745099161172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745099161172</updated>
+    </task>
+    <task id="LOCAL-00004" summary="demo v1 tests was added in selectSale as the case 1/2">
+      <option name="closed" value="true" />
+      <created>1745188771723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745188771723</updated>
+    </task>
+    <task id="LOCAL-00005" summary="demo v1 format was added">
+      <option name="closed" value="true" />
+      <created>1745224619577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745224619577</updated>
+    </task>
+    <task id="LOCAL-00006" summary="demo v1 format was added">
+      <option name="closed" value="true" />
+      <created>1745228279511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745228279511</updated>
+    </task>
+    <task id="LOCAL-00007" summary="demo v2 UI action added in addButton">
+      <option name="closed" value="true" />
+      <created>1745378430508</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745378430509</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="demo v1 menu was added in selectSale" />
+    <MESSAGE value="demo v1 assignDescriptionProduct was added in selectSale as case 1" />
+    <MESSAGE value="demo v1 assignRemoveProduct was added in selectSale as case 2" />
+    <MESSAGE value="demo v1 tests was added in selectSale as the case 1/2" />
+    <MESSAGE value="demo v1 format was added" />
+    <MESSAGE value="demo v2 UI action added in addButton" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v2 UI action added in addButton" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controllers/Description.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

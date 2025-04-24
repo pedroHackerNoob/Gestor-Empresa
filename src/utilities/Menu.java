@@ -17,7 +17,11 @@ public class Menu {
         RepositoryProductsImpl.addProduct(new Product(name, price, stock));
     }
     public static void deleteProduct(int id){
-        RepositoryProductsImpl.deleteProduct(id);
+        if (id <= RepositoryProductsImpl.sizeProducts()){
+            RepositoryProductsImpl.deleteProduct(id);
+        }else {
+
+        }
     }
 
 }

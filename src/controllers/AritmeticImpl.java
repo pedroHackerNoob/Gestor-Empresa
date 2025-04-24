@@ -8,7 +8,7 @@ public class AritmeticImpl {
     private static double total=0;
     private static double subtotal = 0;
 
-    public static void discountTotal(double discount) {
+    public static void setDiscountTotal(double discount) {
         total-=discount;
     }
     public static String setDescriptionItem(Product product){

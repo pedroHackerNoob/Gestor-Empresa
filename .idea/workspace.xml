@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v3 terminal menu added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/Mamberroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/Mamberroi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/RunMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/RunMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mamberroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mamberroi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Description.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/RunMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/RunMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/RunMenu.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +97,8 @@
       <workItem from="1745273242167" duration="1891000" />
       <workItem from="1745375311431" duration="4566000" />
       <workItem from="1745387263945" duration="1771000" />
+      <workItem from="1745389735593" duration="3000" />
+      <workItem from="1745459584346" duration="2597000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -186,5 +183,16 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controllers/AritmeticImpl.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

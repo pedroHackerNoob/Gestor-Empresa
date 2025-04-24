@@ -52,7 +52,7 @@ public class RepositoryProductsImpl {
             System.out.println("\nID: "+id+" Nombre: "+products.get(id).getName()+" \n");
             System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
-            AritmeticImpl.discountTotal(products.get(id).getSubTotal());
+            AritmeticImpl.setDiscountTotal(products.get(id).getSubTotal());
             if(tamanio==1 || idtemp ==1) {
 //            se tiene que cambiar el subtotal
                 RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
@@ -64,5 +64,11 @@ public class RepositoryProductsImpl {
 
 
 
+    }
+
+    public static int sizeProducts() {
+        int size = products.size();
+
+        return size;
     }
 }

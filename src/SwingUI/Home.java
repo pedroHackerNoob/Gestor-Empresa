@@ -289,7 +289,7 @@ public class Home extends javax.swing.JFrame {
             if( nameTextField.getText().isEmpty() || priceTextField.getText().isEmpty() || stockTextField.getText().isEmpty()){
                 avisoAddjLabel13.setForeground( Color.red);
                 avisoAddjLabel13.setText("Ingrese valores validos!");
-                JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
+//                JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
             }else {
 //                get texts field
                 String name = nameTextField.getText();

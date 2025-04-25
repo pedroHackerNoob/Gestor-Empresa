@@ -267,15 +267,12 @@ public class Home extends javax.swing.JFrame {
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
-            nameTextField.setText("tacos");
-            priceTextField.setText("14");
-            stockTextField.setText("1");
+
             if( nameTextField.getText().isEmpty() || priceTextField.getText().isEmpty() || stockTextField.getText().isEmpty()){
-                avisoAddjLabel13.setForeground( Color.red);
-                avisoAddjLabel13.setText("Ingrese valores validos!");
-//                JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
-            }else {
-//                get texts field
+                nameTextField.setText("tacos");
+                priceTextField.setText("10");
+                stockTextField.setText("1");
+
                 String name = nameTextField.getText();
                 String priceSt = priceTextField.getText();
                 String stockSt = stockTextField.getText();
@@ -299,6 +296,10 @@ public class Home extends javax.swing.JFrame {
                 String total = String.valueOf(AritmeticImpl.getTotal());
                 totalLabel.setText("$"+total);
 
+            }else {
+//                get texts field
+
+
 
 //                JOptionPane.showMessageDialog(null, "El producto se ha agregado correctamente");
 
@@ -315,12 +316,13 @@ public class Home extends javax.swing.JFrame {
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
-//        asigna
-        idRemoveTextField.setText("1");
-        int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
-        int size = RepositoryProductsImpl.sizeProducts();
 
         if(!idRemoveTextField.getText().isEmpty()){
+//            idRemoveTextField.setText("1");
+            int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
+            int size = RepositoryProductsImpl.sizeProducts();
+
+
             if (productTableModel.getValueAt(idDeleteInt,4)=="cancelado"){
                 JOptionPane.showMessageDialog(this, "El producto ya ha sido eliminado");
 
@@ -339,15 +341,21 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
-        moneyTextField.setText("200");
+        DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
 
-        if (!moneyTextField.getText().isEmpty()){
+        if (moneyTextField.getText().isEmpty()){
+
+            moneyTextField.setText("200");
             int payInt = Integer.parseInt(moneyTextField.getText());
 
             if (payInt >= AritmeticImpl.getTotal()){
                 String change = String.valueOf(AritmeticImpl.changeMoney(payInt));
                 changeLabel.setText("$"+change);
-                JOptionPane.showMessageDialog(this, "El producto compra realizada");
+                JOptionPane.showMessageDialog(this, " compra realizada");
+//                reiniciar sistema
+
+            }else {
+                JOptionPane.showMessageDialog(this, "Ingrese dinero validos!");
             }
         }else {
             JOptionPane.showMessageDialog(this, "Ingrese valores validos!");

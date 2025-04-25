@@ -70,4 +70,7 @@ public class RepositoryProductsImpl {
         int size = products.size();
         return size;
     }
+    public static void removeList(){
+        products.clear();
+    }
 }

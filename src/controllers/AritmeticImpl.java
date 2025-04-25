@@ -37,7 +37,7 @@ public class AritmeticImpl {
         System.out.println("Total a pagar: $"+getTotal());
     }
 
-    public static void changeMoney(double change){
+    public static double changeMoney(double change){
 
         if(change>= total){
             System.out.println("+--------------------------------------------------------------------+");
@@ -54,6 +54,7 @@ public class AritmeticImpl {
             System.out.println("no tiene dinero suficiente");
         }
         System.out.println("+--------------------------------------------------------------------+");
+        return change;
     }
     public static int getIdTemp() {
         return idTemp;

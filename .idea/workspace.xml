@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v3 Remove item was addedo to Home in deleteButton">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v3.1 Remove item was addedo to Home in deleteButton">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +105,8 @@
       <workItem from="1745387263945" duration="1771000" />
       <workItem from="1745389735593" duration="3000" />
       <workItem from="1745459584346" duration="2597000" />
-      <workItem from="1745464962930" duration="721000" />
+      <workItem from="1745464962930" duration="808000" />
+      <workItem from="1745552578000" duration="2163000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -160,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745385269688</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="demo v3.1 Remove item was addedo to Home in deleteButton">
+      <option name="closed" value="true" />
+      <created>1745465843166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745465843166</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +195,8 @@
     <MESSAGE value="demo v1 format was added" />
     <MESSAGE value="demo v2 UI action added in addButton" />
     <MESSAGE value="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel" />
+    <MESSAGE value="demo v3.1 Remove item was addedo to Home in deleteButton" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v3.1 Remove item was addedo to Home in deleteButton" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -68,7 +68,6 @@ public class RepositoryProductsImpl {
 
     public static int sizeProducts() {
         int size = products.size();
-
         return size;
     }
 }

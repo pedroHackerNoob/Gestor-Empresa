@@ -5,6 +5,7 @@
 package SwingUI;
 
 import controllers.AritmeticImpl;
+import repositories.RepositoryProductsImpl;
 import utilities.Menu;
 
 import javax.swing.*;
@@ -51,7 +52,7 @@ public class Home extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         moneyTextField = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        changeLabel = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         idRemoveTextField = new javax.swing.JTextField();
         deleteButton = new javax.swing.JButton();
@@ -59,6 +60,8 @@ public class Home extends javax.swing.JFrame {
         payButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Gestion venta");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         jLabel1.setText("Descripcion:");
@@ -118,15 +121,6 @@ public class Home extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        productsTable.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                productsTableAncestorAdded(evt);
-            }
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-            }
-            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
-            }
-        });
         jScrollPane1.setViewportView(productsTable);
 
         jLabel7.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
@@ -139,27 +133,17 @@ public class Home extends javax.swing.JFrame {
         jLabel9.setText("Dinero:");
 
         moneyTextField.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        moneyTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                moneyTextFieldActionPerformed(evt);
-            }
-        });
 
         jLabel10.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         jLabel10.setText("Cambio");
 
-        jLabel11.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
-        jLabel11.setText("$ 00.00");
+        changeLabel.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
+        changeLabel.setText("$ 00.00");
 
         jLabel12.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
         jLabel12.setText("Eliminar:");
 
         idRemoveTextField.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        idRemoveTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idRemoveTextFieldActionPerformed(evt);
-            }
-        });
 
         deleteButton.setText("Eliminar");
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -213,7 +197,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(totalLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(changeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(moneyTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -273,7 +257,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(jLabel11)))
+                            .addComponent(changeLabel)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(299, Short.MAX_VALUE))
         );
@@ -283,8 +267,8 @@ public class Home extends javax.swing.JFrame {
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
-            nameTextField.setText("pollo");
-            priceTextField.setText("10");
+            nameTextField.setText("tacos");
+            priceTextField.setText("14");
             stockTextField.setText("1");
             if( nameTextField.getText().isEmpty() || priceTextField.getText().isEmpty() || stockTextField.getText().isEmpty()){
                 avisoAddjLabel13.setForeground( Color.red);
@@ -329,45 +313,46 @@ public class Home extends javax.swing.JFrame {
 
     }//GEN-LAST:event_addButtonActionPerformed
 
-    private void moneyTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_moneyTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_moneyTextFieldActionPerformed
-
-    private void idRemoveTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idRemoveTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_idRemoveTextFieldActionPerformed
-
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
-        // TODO add your handling code here:
-//        String idDelete = String.valueOf(idRemoveTextField);
-//        int idDeleteInt = Integer.parseInt(idDelete);
-        int idDeleteInt = 1;
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
+//        asigna
+        idRemoveTextField.setText("1");
+        int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
+        int size = RepositoryProductsImpl.sizeProducts();
 
-//        if(idRemoveTextField.getText().isEmpty()){
-//            JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
-//        }
-        if (productTableModel.getValueAt(idDeleteInt,4)!="cancelado"){
-            if (idDeleteInt>0){
+        if(!idRemoveTextField.getText().isEmpty()){
+            if (productTableModel.getValueAt(idDeleteInt,4)=="cancelado"){
+                JOptionPane.showMessageDialog(this, "El producto ya ha sido eliminado");
+
+            }else if (idDeleteInt >=0 && idDeleteInt <= size){
                 Menu.deleteProduct(idDeleteInt);
                 productTableModel.setValueAt("cancelado", idDeleteInt, 4);
                 totalLabel.setText("$"+AritmeticImpl.getTotal());
-            }else {
-                JOptionPane.showMessageDialog(this, "No se puede eliminar el producto");
             }
-        }else{
-            JOptionPane.showMessageDialog(this, "El producto ya ha sido eliminado");
-
-//            AritmeticImpl.setDiscountTotal();
         }
+        else{
 
+            JOptionPane.showMessageDialog(this, "Ingrese una ID valida");
+
+        }
+        idRemoveTextField.setText("");
     }//GEN-LAST:event_deleteButtonActionPerformed
 
-    private void productsTableAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_productsTableAncestorAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_productsTableAncestorAdded
-
     private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
+        moneyTextField.setText("200");
+
+        if (!moneyTextField.getText().isEmpty()){
+            int payInt = Integer.parseInt(moneyTextField.getText());
+
+            if (payInt >= AritmeticImpl.getTotal()){
+                String change = String.valueOf(AritmeticImpl.changeMoney(payInt));
+                changeLabel.setText("$"+change);
+                JOptionPane.showMessageDialog(this, "El producto compra realizada");
+            }
+        }else {
+            JOptionPane.showMessageDialog(this, "Ingrese valores validos!");
+        }
+        moneyTextField.setText("");
     }//GEN-LAST:event_payButtonActionPerformed
 
     /**
@@ -408,12 +393,12 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
     private javax.swing.JLabel avisoAddjLabel13;
+    private javax.swing.JLabel changeLabel;
     private javax.swing.JButton deleteButton;
     private javax.swing.JTextField discountTextField;
     private javax.swing.JTextField idRemoveTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v4 Pay item added to home">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v5 test added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +92,7 @@
       <workItem from="1745389735593" duration="3000" />
       <workItem from="1745459584346" duration="2597000" />
       <workItem from="1745464962930" duration="808000" />
-      <workItem from="1745552578000" duration="3162000" />
+      <workItem from="1745552578000" duration="3463000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -183,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745555043379</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="demo v5 test added">
+      <option name="closed" value="true" />
+      <created>1745556057854</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745556057854</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +199,8 @@
     <MESSAGE value="demo v2 UI items at ProductTable added and subtotal added at subtotaljlabel" />
     <MESSAGE value="demo v3.1 Remove item was addedo to Home in deleteButton" />
     <MESSAGE value="demo v4 Pay item added to home" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v4 Pay item added to home" />
+    <MESSAGE value="demo v5 test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v5 test added" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -49,7 +49,7 @@ public class Description {
         try {
             System.out.println("Ingrese id del producto: ");
             idSelect = sc.nextInt();
-            Menu.deleteProduct(idSelect);
+            RepositoryProductsImpl.deleteProduct(idSelect);
         } catch (Exception e) {
             sc.nextLine();
             assignRemoveProduct();

@@ -10,6 +10,7 @@ public class AritmeticImpl {
 
     public static void setDiscountTotal(double discount) {
         total-=discount;
+        System.out.println("se desconto: $"+discount);
     }
     public static String setDescriptionItem(Product product){
         System.out.println("+-------+-------+-------------------+---------------+----------------+");

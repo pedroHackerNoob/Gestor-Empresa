@@ -20,11 +20,17 @@ public class RepositoryProductsImpl {
         }
     }
 
-    public static void getProduct(int id) {
-        System.out.println(products.get(id).getName()
-                +" "+products.get(id).getPrice()
-                +" "+products.get(id).getStock()
-                +" "+products.get(id).getSubTotal());
+    public static boolean getProduct(int id) {
+
+        if(products.get(id) != null){
+            System.out.println(products.get(id).getName()
+                    +" "+products.get(id).getPrice()
+                    +" "+products.get(id).getStock()
+                    +" "+products.get(id).getSubTotal());
+            return true;
+        }else {
+            return false;
+        }
     }
 
     public static void addProduct(Product product) {
@@ -39,31 +45,10 @@ public class RepositoryProductsImpl {
         products.set(id, product);
     }
 
-    public static void deleteProduct(int id) {
-        int tamanio = products.size();
-        int idtemp = tamanio -id;
-        if (id >= tamanio) {
-            System.out.println(tamanio+" imposible eliminar el producto: "+id);
-
-        } else {
-            System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-            System.out.println("XXXX                    Producto Eliminado                       XXXXX");
-            System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-            System.out.println("\nID: "+id+" Nombre: "+products.get(id).getName()+" \n");
-            System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-
-            AritmeticImpl.setDiscountTotal(products.get(id).getSubTotal());
-            if(tamanio==1 || idtemp ==1) {
-//            se tiene que cambiar el subtotal
-                RepositoryProductsImpl.updateProduct(id, new Product(products.get(id).getName(), 0,0));
-
-            }
-            AritmeticImpl.getTotalResumen();
-            products.remove(id);
-        }
-
-
-
+    public static double deleteProduct(int id) {
+        double subtotalTemp = products.get(id).getSubTotal();
+        products.remove(id);
+        return subtotalTemp;
     }
 
     public static int sizeProducts() {

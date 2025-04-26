@@ -316,30 +316,51 @@ public class Home extends javax.swing.JFrame {
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
+        idRemoveTextField.setText("1");
 
-        if(!idRemoveTextField.getText().isEmpty()){
-//            idRemoveTextField.setText("1");
+//        esta vacio?
+        if(validation(idRemoveTextField.getText())){
             int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
-            int size = RepositoryProductsImpl.sizeProducts();
 
+            if(idDeleteInt < productTableModel.getRowCount()){
+                if (RepositoryProductsImpl.getProduct(idDeleteInt)){
+                    AritmeticImpl.setDiscountTotal(RepositoryProductsImpl.deleteProduct(idDeleteInt));
 
-            if (productTableModel.getValueAt(idDeleteInt,4)=="cancelado"){
-                JOptionPane.showMessageDialog(this, "El producto ya ha sido eliminado");
+                    productTableModel.removeRow(idDeleteInt);
 
-            }else if (idDeleteInt >=0 && idDeleteInt <= size){
-                Menu.deleteProduct(idDeleteInt);
-                productTableModel.setValueAt("cancelado", idDeleteInt, 4);
-                totalLabel.setText("$"+AritmeticImpl.getTotal());
+                    int size = productTableModel.getRowCount();
+
+                    String total = String.valueOf(AritmeticImpl.getTotal());
+                    totalLabel.setText("$"+total);
+
+                    if(size>0){
+
+                        for(int i=0;i<size;i++){
+
+                            productTableModel.setValueAt(i,i,0);
+                        }
+                    }
+                }else {
+                    JOptionPane.showMessageDialog(null, "el producto no existe");
+                }
+
+            }else{
+                JOptionPane.showMessageDialog(null, "el producto no existe");
+
             }
-        }
-        else{
 
-            JOptionPane.showMessageDialog(this, "Ingrese una ID valida");
-
+            idRemoveTextField.setText("");
         }
-        idRemoveTextField.setText("");
+
     }//GEN-LAST:event_deleteButtonActionPerformed
+    private boolean validation(String text){
 
+        if(!text.isEmpty()){
+            return true;
+        }else {
+            return false;
+        }
+    }
     private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
 

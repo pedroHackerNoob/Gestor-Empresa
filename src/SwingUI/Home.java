@@ -267,11 +267,9 @@ public class Home extends javax.swing.JFrame {
 
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
-
-            if( nameTextField.getText().isEmpty() || priceTextField.getText().isEmpty() || stockTextField.getText().isEmpty()){
-                nameTextField.setText("tacos");
-                priceTextField.setText("10");
-                stockTextField.setText("1");
+            if( validation(nameTextField.getText()) && validation(priceTextField.getText()) && validation(stockTextField.getText())){
+//                priceTextField.setText("10");
+//                stockTextField.setText("1");
 
                 String name = nameTextField.getText();
                 String priceSt = priceTextField.getText();
@@ -280,29 +278,26 @@ public class Home extends javax.swing.JFrame {
                 double price = Double.parseDouble(priceTextField.getText());
                 int stock = Integer.parseInt(stockTextField.getText());
 //                condition if stock is 0
-                if (stock <1){
+                if (stock <1 || stockSt == null){
                     stock = 1;
                 }
 //                add item to software
                 Menu.addProduct(name, price, stock);
+
 //                add item to table
                 String[] product = {String.valueOf(AritmeticImpl.getIdTemp()),
                         name,priceSt,stockSt,
                         String.valueOf(AritmeticImpl.setSubtotal(price, stock))};
+
 //                create statement table
                 DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel() ;
                 productTableModel.addRow(product);
+
                 //                add total to label
                 String total = String.valueOf(AritmeticImpl.getTotal());
                 totalLabel.setText("$"+total);
-
-            }else {
-//                get texts field
-
-
-
-//                JOptionPane.showMessageDialog(null, "El producto se ha agregado correctamente");
-
+            } else {
+                JOptionPane.showMessageDialog(null, "Ingrese un producto valido");
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -316,7 +311,7 @@ public class Home extends javax.swing.JFrame {
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
-        idRemoveTextField.setText("1");
+//        idRemoveTextField.setText("1");
 
 //        esta vacio?
         if(validation(idRemoveTextField.getText())){
@@ -364,9 +359,9 @@ public class Home extends javax.swing.JFrame {
     private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
         DefaultTableModel productTableModel = (DefaultTableModel)productsTable.getModel();
 
-        if (moneyTextField.getText().isEmpty()){
+        if (!moneyTextField.getText().isEmpty()){
 
-            moneyTextField.setText("200");
+//            moneyTextField.setText("200");
             int payInt = Integer.parseInt(moneyTextField.getText());
 
             if (payInt >= AritmeticImpl.getTotal()){

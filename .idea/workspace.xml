@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v5 test added">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v5 delete function fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +112,7 @@
       <workItem from="1745552578000" duration="3528000" />
       <workItem from="1745600080515" duration="874000" />
       <workItem from="1745613110167" duration="1004000" />
-      <workItem from="1745627214766" duration="5413000" />
+      <workItem from="1745627214766" duration="7143000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -206,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745556057854</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="demo v5 delete function fixed">
+      <option name="closed" value="true" />
+      <created>1745632828063</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745632828063</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +228,8 @@
     <MESSAGE value="demo v3.1 Remove item was addedo to Home in deleteButton" />
     <MESSAGE value="demo v4 Pay item added to home" />
     <MESSAGE value="demo v5 test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v5 test added" />
+    <MESSAGE value="demo v5 delete function fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v5 delete function fixed" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

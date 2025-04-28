@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 new ui added">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 CRU UI added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.java" afterDir="false" />
     </list>
@@ -125,7 +118,7 @@
       <workItem from="1745708946345" duration="229000" />
       <workItem from="1745733471750" duration="19000" />
       <workItem from="1745733504089" duration="999000" />
-      <workItem from="1745869126125" duration="3261000" />
+      <workItem from="1745869126125" duration="6024000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -239,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745734413088</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="demo v6 CRU UI added">
+      <option name="closed" value="true" />
+      <created>1745875038507</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745875038507</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +261,8 @@
     <MESSAGE value="demo v5 delete function fixed" />
     <MESSAGE value="demo v6, ready to use" />
     <MESSAGE value="demo v6 new ui added" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v6 new ui added" />
+    <MESSAGE value="demo v6 CRU UI added" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v6 CRU UI added" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

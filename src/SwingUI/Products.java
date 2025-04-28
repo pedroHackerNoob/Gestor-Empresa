@@ -29,9 +29,12 @@ public class Products extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         createButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        ReadButton = new javax.swing.JButton();
+        updateButton = new javax.swing.JButton();
         contentPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,15 +44,43 @@ public class Products extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(10, 147, 150));
 
+        jPanel3.setBackground(new java.awt.Color(251, 86, 7));
+
+        jLabel1.setFont(new java.awt.Font("Courier New", 0, 36)); // NOI18N
+        jLabel1.setText("the Italian Karkov");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 106, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 95, 115));
@@ -64,21 +95,37 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(251, 86, 7));
-        jButton2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Update");
-        jButton2.setPreferredSize(new java.awt.Dimension(71, 25));
+        ReadButton.setBackground(new java.awt.Color(251, 86, 7));
+        ReadButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        ReadButton.setForeground(new java.awt.Color(0, 0, 0));
+        ReadButton.setText("Read");
+        ReadButton.setPreferredSize(new java.awt.Dimension(71, 25));
+        ReadButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReadButtonActionPerformed(evt);
+            }
+        });
+
+        updateButton.setBackground(new java.awt.Color(255, 190, 11));
+        updateButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        updateButton.setForeground(new java.awt.Color(0, 0, 0));
+        updateButton.setText("Update");
+        updateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(createButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ReadButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(createButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+                    .addComponent(updateButton, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -87,8 +134,10 @@ public class Products extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(createButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(521, Short.MAX_VALUE))
+                .addComponent(ReadButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         contentPanel.setBackground(new java.awt.Color(148, 210, 189));
@@ -101,7 +150,7 @@ public class Products extends javax.swing.JFrame {
         );
         contentPanelLayout.setVerticalGroup(
             contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 757, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -134,7 +183,6 @@ public class Products extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void createButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButton1ActionPerformed
-        // TODO add your handling code here:
         Sales sales = new Sales();
         sales.setSize(817, 757);
         sales.setLocation(0,0);
@@ -145,6 +193,29 @@ public class Products extends javax.swing.JFrame {
         contentPanel.revalidate();
         contentPanel.repaint();
     }//GEN-LAST:event_createButton1ActionPerformed
+
+    private void ReadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadButtonActionPerformed
+        Request request = new Request();
+        request.setSize(817, 757);
+        request.setLocation(0,0);
+
+        contentPanel.removeAll();
+        contentPanel.add(request, BorderLayout.CENTER);
+        contentPanel.revalidate();
+        contentPanel.repaint();
+    }//GEN-LAST:event_ReadButtonActionPerformed
+
+    private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
+        Update update = new Update();
+        update.setSize(817, 757);
+        update.setLocation(0,0);
+        
+        contentPanel.removeAll();
+        contentPanel.add(update, BorderLayout.CENTER);
+        contentPanel.revalidate();
+        contentPanel.repaint();
+
+    }//GEN-LAST:event_updateButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,10 +254,13 @@ public class Products extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ReadButton;
     private javax.swing.JPanel contentPanel;
     private javax.swing.JButton createButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton updateButton;
     // End of variables declaration//GEN-END:variables
 }

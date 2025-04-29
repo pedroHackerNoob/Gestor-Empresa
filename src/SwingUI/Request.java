@@ -143,12 +143,10 @@ public class Request extends javax.swing.JPanel {
     private void refreshHistoryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshHistoryButtonActionPerformed
         int size = RepositoryProductsImpl.sizeProducts();
         DefaultTableModel model = (DefaultTableModel)historyTable.getModel();
-        if(size>0){
-            if (model.getRowCount()>0){
-                for (int i = 0; i < size; i++) {
-                    model.removeRow(i);
-                }
-            }
+        int tableSize = model.getRowCount();
+//        System.out.println(tableSize);
+
+        if (tableSize ==0 && size >0){
 
             for(int i=0;i<size;i++){
 
@@ -160,9 +158,8 @@ public class Request extends javax.swing.JPanel {
                 String[] data = {id,name,price,stock,subtotal};
                 model.addRow(data);
             }
-        }else {
-
         }
+
     }//GEN-LAST:event_refreshHistoryButtonActionPerformed
 
 

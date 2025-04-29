@@ -22,12 +22,14 @@ public class RepositoryProductsImpl {
     }
 
     public static Product getProduct(int id) {
-        if(products.get(id) != null){
-            System.out.println(products.get(id).getName()
-                    +" "+products.get(id).getPrice()
-                    +" "+products.get(id).getStock()
-                    +" "+products.get(id).getSubTotal());
-        }
+//        if(products.get(id) != null){
+//            System.out.println("+--------------------------------------------------------------------+");
+//            System.out.println("|"+products.get(id).getName()
+//                    +"\t precio:$"+products.get(id).getPrice()
+//                    +"\t cantidad:"+products.get(id).getStock()
+//                    +"\t subtotal: $"+products.get(id).getSubTotal());
+//            System.out.println("+--------------------------------------------------------------------+");
+//        }
         return products.get(id);
     }
 

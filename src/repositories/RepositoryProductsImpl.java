@@ -1,12 +1,13 @@
 package repositories;
 
+import SwingUI.Products;
 import controllers.AritmeticImpl;
 import models.Product;
 
 import java.util.ArrayList;
 
 public class RepositoryProductsImpl {
-    private static final ArrayList<Product> products = new ArrayList<>();
+    static final ArrayList<Product> products = new ArrayList<>();
 
     public static void getProducts() {
         System.out.println("+--------------------------------------------------------------------+");
@@ -20,17 +21,14 @@ public class RepositoryProductsImpl {
         }
     }
 
-    public static boolean getProduct(int id) {
-
+    public static Product getProduct(int id) {
         if(products.get(id) != null){
             System.out.println(products.get(id).getName()
                     +" "+products.get(id).getPrice()
                     +" "+products.get(id).getStock()
                     +" "+products.get(id).getSubTotal());
-            return true;
-        }else {
-            return false;
         }
+        return products.get(id);
     }
 
     public static void addProduct(Product product) {

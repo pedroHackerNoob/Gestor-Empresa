@@ -248,6 +248,8 @@ public class Products extends javax.swing.JFrame {
         contentPanel.add(request, BorderLayout.CENTER);
         contentPanel.revalidate();
         contentPanel.repaint();
+
+        
     }//GEN-LAST:event_ReadButtonActionPerformed
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed

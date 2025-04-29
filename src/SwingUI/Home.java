@@ -317,38 +317,38 @@ public class Home extends javax.swing.JFrame {
 //        idRemoveTextField.setText("1");
 
 //        esta vacio?
-        if(validation(idRemoveTextField.getText())){
-            int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
-
-            if(idDeleteInt < productTableModel.getRowCount()){
-                if (RepositoryProductsImpl.getProduct(idDeleteInt)){
-                    AritmeticImpl.setDiscountTotal(RepositoryProductsImpl.deleteProduct(idDeleteInt));
-
-                    productTableModel.removeRow(idDeleteInt);
-
-                    int size = productTableModel.getRowCount();
-
-                    String total = String.valueOf(AritmeticImpl.getTotal());
-                    totalLabel.setText("$"+total);
-
-                    if(size>0){
-
-                        for(int i=0;i<size;i++){
-
-                            productTableModel.setValueAt(i,i,0);
-                        }
-                    }
-                }else {
-                    JOptionPane.showMessageDialog(null, "el producto no existe");
-                }
-
-            }else{
-                JOptionPane.showMessageDialog(null, "el producto no existe");
-
-            }
-
-            idRemoveTextField.setText("");
-        }
+//        if(validation(idRemoveTextField.getText())){
+//            int idDeleteInt = Integer.parseInt(idRemoveTextField.getText());
+//
+//            if(idDeleteInt < productTableModel.getRowCount()){
+//                if (RepositoryProductsImpl.getProduct(idDeleteInt)){
+//                    AritmeticImpl.setDiscountTotal(RepositoryProductsImpl.deleteProduct(idDeleteInt));
+//
+//                    productTableModel.removeRow(idDeleteInt);
+//
+//                    int size = productTableModel.getRowCount();
+//
+//                    String total = String.valueOf(AritmeticImpl.getTotal());
+//                    totalLabel.setText("$"+total);
+//
+//                    if(size>0){
+//
+//                        for(int i=0;i<size;i++){
+//
+//                            productTableModel.setValueAt(i,i,0);
+//                        }
+//                    }
+//                }else {
+//                    JOptionPane.showMessageDialog(null, "el producto no existe");
+//                }
+//
+//            }else{
+//                JOptionPane.showMessageDialog(null, "el producto no existe");
+//
+//            }
+//
+//            idRemoveTextField.setText("");
+//        }
 
     }//GEN-LAST:event_deleteButtonActionPerformed
     private boolean validation(String text){

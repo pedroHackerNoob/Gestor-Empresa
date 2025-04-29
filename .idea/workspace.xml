@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Add function was added">
-      <change afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Products.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Update.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Update.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Update function was added">
+      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +128,7 @@
       <workItem from="1745869126125" duration="8237000" />
       <workItem from="1745887724457" duration="7017000" />
       <workItem from="1745929653214" duration="4465000" />
-      <workItem from="1745962295849" duration="1721000" />
+      <workItem from="1745962295849" duration="2073000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -296,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745902837553</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="demo v6 Update function was added">
+      <option name="closed" value="true" />
+      <created>1745964215809</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745964215809</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +314,8 @@
     <MESSAGE value="demo v6 CRU UI added" />
     <MESSAGE value="demo v6 Update design was updated" />
     <MESSAGE value="demo v6 Add function was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo v6 Add function was added" />
+    <MESSAGE value="demo v6 Update function was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo v6 Update function was added" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

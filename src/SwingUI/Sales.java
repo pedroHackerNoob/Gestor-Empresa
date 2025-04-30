@@ -52,15 +52,19 @@ public class Sales extends javax.swing.JPanel {
         labelTex1 = new javax.swing.JLabel();
         itemPriceLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 201, 23));
         setMaximumSize(new java.awt.Dimension(817, 757));
         setMinimumSize(new java.awt.Dimension(817, 757));
         setPreferredSize(new java.awt.Dimension(817, 757));
 
-        jPanel1.setBackground(new java.awt.Color(233, 216, 166));
+        jPanel1.setBackground(new java.awt.Color(140, 0, 0));
 
-        jPanel2.setBackground(new java.awt.Color(148, 210, 189));
+        jPanel2.setBackground(new java.awt.Color(255, 201, 23));
         jPanel2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(10, 147, 150)));
 
+        requestItemButton.setBackground(new java.awt.Color(240, 0, 0));
+        requestItemButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        requestItemButton.setForeground(new java.awt.Color(255, 255, 255));
         requestItemButton.setText("Agregar");
         requestItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +74,7 @@ public class Sales extends javax.swing.JPanel {
 
         quantityItemsComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
 
-        jPanel3.setBackground(new java.awt.Color(51, 255, 51));
+        jPanel3.setBackground(new java.awt.Color(5, 5, 5));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -165,9 +169,12 @@ public class Sales extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(148, 210, 189));
+        jPanel5.setBackground(new java.awt.Color(255, 201, 23));
         jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(10, 147, 150)));
 
+        requestItemButton1.setBackground(new java.awt.Color(240, 0, 0));
+        requestItemButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        requestItemButton1.setForeground(new java.awt.Color(255, 255, 255));
         requestItemButton1.setText("Agregar");
         requestItemButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +184,7 @@ public class Sales extends javax.swing.JPanel {
 
         quantityItemsComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
 
-        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel6.setBackground(new java.awt.Color(5, 5, 5));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);

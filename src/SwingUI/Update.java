@@ -48,12 +48,15 @@ public class Update extends javax.swing.JPanel {
 
         jTextField1.setText("jTextField1");
 
-        jPanel1.setBackground(new java.awt.Color(238, 155, 0));
+        setBackground(new java.awt.Color(255, 201, 23));
 
-        jPanel2.setBackground(new java.awt.Color(58, 134, 255));
+        jPanel1.setBackground(new java.awt.Color(140, 0, 0));
+
+        jPanel2.setBackground(new java.awt.Color(5, 5, 5));
+        jPanel2.setForeground(new java.awt.Color(255, 225, 0));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(255, 225, 0));
         jLabel1.setText("Modificar producto");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -91,7 +94,7 @@ public class Update extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(historyTable);
 
-        jPanel4.setBackground(new java.awt.Color(148, 210, 189));
+        jPanel4.setBackground(new java.awt.Color(255, 201, 23));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
@@ -111,8 +114,9 @@ public class Update extends javax.swing.JPanel {
 
         quantityComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8" }));
 
-        updateRequestButton.setBackground(new java.awt.Color(255, 190, 11));
-        updateRequestButton.setForeground(new java.awt.Color(0, 0, 0));
+        updateRequestButton.setBackground(new java.awt.Color(240, 0, 0));
+        updateRequestButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        updateRequestButton.setForeground(new java.awt.Color(255, 225, 0));
         updateRequestButton.setText("Modificar");
         updateRequestButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

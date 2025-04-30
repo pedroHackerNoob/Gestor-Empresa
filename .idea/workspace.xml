@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Update function was added">
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" afterDir="false" />
-    </list>
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Update function was added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,37 +30,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Gestion Negocio.executor": "Run",
-    "Application.Gestion.executor": "Run",
-    "Application.Home.executor": "Run",
-    "Application.HomeBoy.executor": "Run",
-    "Application.Mamberroi.executor": "Run",
-    "Application.Products.executor": "Run",
-    "Application.UI.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/blackhawk/Documents/DevOp/Java/Machukers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Gestion Negocio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Gestion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Home.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HomeBoy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Mamberroi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Products.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/blackhawk/Documents/DevOp/Java/Machukers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.HomeBoy">
     <configuration name="Gestion" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Mamberroi" />
@@ -129,6 +127,7 @@
       <workItem from="1745887724457" duration="7017000" />
       <workItem from="1745929653214" duration="4465000" />
       <workItem from="1745962295849" duration="2073000" />
+      <workItem from="1745970376603" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -295,6 +294,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />

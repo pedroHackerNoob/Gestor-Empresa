@@ -39,7 +39,9 @@ public class Request extends javax.swing.JPanel {
         historyTable = new javax.swing.JTable();
         refreshHistoryButton = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(155, 34, 38));
+        setBackground(new java.awt.Color(140, 0, 0));
+
+        jPanel1.setBackground(new java.awt.Color(140, 0, 0));
 
         jPanel2.setBackground(new java.awt.Color(238, 155, 0));
 
@@ -64,6 +66,7 @@ public class Request extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        historyTable.setBackground(new java.awt.Color(255, 201, 23));
         historyTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -89,6 +92,9 @@ public class Request extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(historyTable);
 
+        refreshHistoryButton.setBackground(new java.awt.Color(240, 0, 0));
+        refreshHistoryButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        refreshHistoryButton.setForeground(new java.awt.Color(255, 225, 0));
         refreshHistoryButton.setText("Actualizar historial");
         refreshHistoryButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,7 +112,7 @@ public class Request extends javax.swing.JPanel {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(refreshHistoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(refreshHistoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 662, Short.MAX_VALUE))
                 .addContainerGap())
         );

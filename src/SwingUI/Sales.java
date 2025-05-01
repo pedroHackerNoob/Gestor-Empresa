@@ -319,7 +319,7 @@ public class Sales extends javax.swing.JPanel {
 
         addProduct(name, price, stock);
 
-        quantityItemsComboBox.setSelectedIndex(0);
+        quantityItemsComboBox1.setSelectedIndex(0);
         
     }//GEN-LAST:event_requestItemButton1ActionPerformed
 

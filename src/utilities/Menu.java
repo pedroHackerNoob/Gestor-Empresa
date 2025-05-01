@@ -13,6 +13,7 @@ public class Menu {
     public static void menuClient(String name){
         RepositoryClientsImpl.addClient(new Client(name));
     }
+
     public static void addProduct(String name, double price, int stock){
         RepositoryProductsImpl.addProduct(new Product(name, price, stock));
     }

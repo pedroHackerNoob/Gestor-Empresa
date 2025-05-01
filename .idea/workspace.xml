@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Update function was added" />
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v6 Update function was added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Request.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Request.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Update.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,8 +94,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Gestion" />
-      <item itemvalue="Application.UI" />
       <item itemvalue="Application.HomeBoy" />
+      <item itemvalue="Application.UI" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -128,6 +137,8 @@
       <workItem from="1745929653214" duration="4465000" />
       <workItem from="1745962295849" duration="2073000" />
       <workItem from="1745970376603" duration="656000" />
+      <workItem from="1745980443428" duration="6000" />
+      <workItem from="1746072172308" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -350,7 +361,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SwingUI/Products.java</url>
-          <line>255</line>
+          <line>256</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

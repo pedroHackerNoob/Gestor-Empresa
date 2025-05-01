@@ -217,8 +217,15 @@ public class Update extends javax.swing.JPanel {
         int idTempo = Integer.parseInt(idTextField.getText());
         String newName = productNameComboBox.getSelectedItem().toString();
         int quantity = Integer.parseInt(quantityComboBox.getSelectedItem().toString());
+        double priceTemp = 0;
 
-        RepositoryProductsImpl.updateProduct(idTempo, new Product(newName,15,quantity));
+        if( newName.equals("Dorado")){
+            priceTemp = 15;
+        }else {
+            priceTemp = 12;
+        }
+
+        RepositoryProductsImpl.updateProduct(idTempo, new Product(newName,priceTemp,quantity));
 
         int size = RepositoryProductsImpl.sizeProducts();
         DefaultTableModel model = (DefaultTableModel)historyTable.getModel();

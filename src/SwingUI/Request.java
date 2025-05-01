@@ -39,11 +39,11 @@ public class Request extends javax.swing.JPanel {
         historyTable = new javax.swing.JTable();
         refreshHistoryButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(140, 0, 0));
+        setBackground(new java.awt.Color(255, 201, 23));
 
         jPanel1.setBackground(new java.awt.Color(140, 0, 0));
 
-        jPanel2.setBackground(new java.awt.Color(238, 155, 0));
+        jPanel2.setBackground(new java.awt.Color(255, 201, 23));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -94,7 +94,7 @@ public class Request extends javax.swing.JPanel {
 
         refreshHistoryButton.setBackground(new java.awt.Color(240, 0, 0));
         refreshHistoryButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        refreshHistoryButton.setForeground(new java.awt.Color(255, 225, 0));
+        refreshHistoryButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshHistoryButton.setText("Actualizar historial");
         refreshHistoryButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

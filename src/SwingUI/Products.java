@@ -42,13 +42,14 @@ public class Products extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Machukers");
-        setBackground(new java.awt.Color(238, 155, 0));
+        setBackground(new java.awt.Color(5, 5, 5));
         setMinimumSize(new java.awt.Dimension(1125, 563));
 
-        jPanel1.setBackground(new java.awt.Color(10, 147, 150));
+        jPanel1.setBackground(new java.awt.Color(255, 201, 23));
 
-        jPanel3.setBackground(new java.awt.Color(251, 86, 7));
+        jPanel3.setBackground(new java.awt.Color(140, 0, 0));
 
+        jLabel1.setBackground(new java.awt.Color(140, 0, 0));
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 36)); // NOI18N
         jLabel1.setText("the Italian Karkov");
 
@@ -69,7 +70,7 @@ public class Products extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 0, 110));
+        jPanel2.setBackground(new java.awt.Color(5, 5, 5));
 
         jLabel3.setBackground(new java.awt.Color(255, 190, 11));
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
@@ -114,11 +115,11 @@ public class Products extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        optionPanel.setBackground(new java.awt.Color(0, 95, 115));
+        optionPanel.setBackground(new java.awt.Color(255, 201, 23));
 
-        createButton1.setBackground(new java.awt.Color(255, 190, 11));
-        createButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        createButton1.setForeground(new java.awt.Color(0, 0, 0));
+        createButton1.setBackground(new java.awt.Color(240, 0, 0));
+        createButton1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        createButton1.setForeground(new java.awt.Color(255, 255, 255));
         createButton1.setText("Create");
         createButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,9 +127,9 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        ReadButton.setBackground(new java.awt.Color(251, 86, 7));
-        ReadButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        ReadButton.setForeground(new java.awt.Color(0, 0, 0));
+        ReadButton.setBackground(new java.awt.Color(240, 0, 0));
+        ReadButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        ReadButton.setForeground(new java.awt.Color(255, 255, 255));
         ReadButton.setText("Read");
         ReadButton.setPreferredSize(new java.awt.Dimension(71, 25));
         ReadButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,9 +138,9 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        updateButton.setBackground(new java.awt.Color(255, 190, 11));
-        updateButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        updateButton.setForeground(new java.awt.Color(0, 0, 0));
+        updateButton.setBackground(new java.awt.Color(240, 0, 0));
+        updateButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        updateButton.setForeground(new java.awt.Color(255, 255, 255));
         updateButton.setText("Update");
         updateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,9 +148,9 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        deleteButton.setBackground(new java.awt.Color(251, 86, 7));
-        deleteButton.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        deleteButton.setForeground(new java.awt.Color(0, 0, 0));
+        deleteButton.setBackground(new java.awt.Color(240, 0, 0));
+        deleteButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        deleteButton.setForeground(new java.awt.Color(255, 255, 255));
         deleteButton.setText("Delete");
         deleteButton.setPreferredSize(new java.awt.Dimension(71, 25));
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
@@ -185,7 +186,7 @@ public class Products extends javax.swing.JFrame {
                 .addGap(141, 141, 141))
         );
 
-        contentPanel.setBackground(new java.awt.Color(148, 210, 189));
+        contentPanel.setBackground(new java.awt.Color(140, 0, 0));
 
         javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
         contentPanel.setLayout(contentPanelLayout);

@@ -211,7 +211,7 @@ public class Sales extends javax.swing.JPanel {
 
         itemPriceLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         itemPriceLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        itemPriceLabel1.setText("15.00");
+        itemPriceLabel1.setText("12.00");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -315,7 +315,7 @@ public class Sales extends javax.swing.JPanel {
 
         String name = "vapor";
         double price = 12;
-        int stock = Integer.parseInt(quantityItemsComboBox.getSelectedItem().toString());
+        int stock = Integer.parseInt(quantityItemsComboBox1.getSelectedItem().toString());
 
         addProduct(name, price, stock);
 

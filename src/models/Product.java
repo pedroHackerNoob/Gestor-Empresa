@@ -5,12 +5,14 @@ public class Product {
     private double price;
     private int stock;
     private double subTotal;
+    private String status;
 
-    public Product(String name, double price, int stock) {
+    public Product(String name, double price, int stock, double subTotal, String status) {
         this.name = name;
         this.price = price;
         this.stock = stock;
-        this.subTotal = price * stock;
+        this.subTotal = subTotal;
+        this.status = status;
     }
 
     public double getSubTotal() {
@@ -43,5 +45,13 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

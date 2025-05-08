@@ -1,7 +1,5 @@
 package utilities;
 
-import SwingUI.Home;
-import controllers.AritmeticImpl;
 import models.Client;
 import models.Product;
 import repositories.RepositoryClientsImpl;
@@ -14,8 +12,8 @@ public class Menu {
         RepositoryClientsImpl.addClient(new Client(name));
     }
 
-    public static void addProduct(String name, double price, int stock){
-        RepositoryProductsImpl.addProduct(new Product(name, price, stock));
+    public static void addProduct(String name, double price, double subtotal, int stock){
+        RepositoryProductsImpl.addProduct(new Product(name, price, stock,subtotal ,"en progreso"));
     }
 
 

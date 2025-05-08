@@ -4,6 +4,7 @@
  */
 package SwingUI;
 
+import controllers.AritmeticImpl;
 import models.Product;
 import repositories.RepositoryProductsImpl;
 
@@ -45,6 +46,8 @@ public class Update extends javax.swing.JPanel {
         productNameComboBox = new javax.swing.JComboBox<>();
         quantityComboBox = new javax.swing.JComboBox<>();
         updateRequestButton = new javax.swing.JButton();
+        statusComboBox = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
 
@@ -81,11 +84,11 @@ public class Update extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "name", "price", "stock", "subtotal"
+                "ID", "name", "price", "stock", "subtotal", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -124,24 +127,33 @@ public class Update extends javax.swing.JPanel {
             }
         });
 
+        statusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "en progreso", "cancelado", "entregado" }));
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("Ingrese estado:");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(productNameComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(quantityComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(idTextField))
+                    .addComponent(statusComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(productNameComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(quantityComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(idTextField)))
                 .addGap(18, 18, 18)
                 .addComponent(updateRequestButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86))
+                .addGap(88, 88, 88))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,7 +174,11 @@ public class Update extends javax.swing.JPanel {
                             .addComponent(productNameComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(quantityComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(statusComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -191,7 +207,7 @@ public class Update extends javax.swing.JPanel {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(340, Short.MAX_VALUE))
+                .addContainerGap(301, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -217,31 +233,39 @@ public class Update extends javax.swing.JPanel {
         int idTempo = Integer.parseInt(idTextField.getText());
         String newName = productNameComboBox.getSelectedItem().toString();
         int quantity = Integer.parseInt(quantityComboBox.getSelectedItem().toString());
-        double priceTemp = 0;
+        String status = statusComboBox.getSelectedItem().toString();
+        double priceTemp;
 
         if( newName.equals("Dorado")){
             priceTemp = 15;
-        }else {
-            priceTemp = 12;
+        } else {
+            priceTemp = 10;
+        }
+        double subtotal=  AritmeticImpl.setSubtotal(priceTemp,quantity);
+
+        if (status.equals("cancelado")) {
+            subtotal=0;
+            quantity=0;
         }
 
-        RepositoryProductsImpl.updateProduct(idTempo, new Product(newName,priceTemp,quantity));
+        RepositoryProductsImpl.updateProduct(idTempo, new Product(newName,priceTemp,quantity,subtotal,status));
 
         int size = RepositoryProductsImpl.sizeProducts();
         DefaultTableModel model = (DefaultTableModel)historyTable.getModel();
         int tableSize = model.getRowCount();
-//        System.out.println(tableSize);
 
         if (tableSize ==0 && size >0){
 
             for(int i=0;i<size;i++){
 
                 String id = String.valueOf(i);
-                String name = RepositoryProductsImpl.getProduct(i).getName();
-                String price = String.valueOf(RepositoryProductsImpl.getProduct(i).getPrice());
-                String stock = String.valueOf(RepositoryProductsImpl.getProduct(i).getStock());
-                String subtotal = String.valueOf(RepositoryProductsImpl.getProduct(i).getSubTotal());
-                String[] data = {id,name,price,stock,subtotal};
+                String nameProduct = RepositoryProductsImpl.getProduct(i).getName();
+                String priceProduct = String.valueOf(RepositoryProductsImpl.getProduct(i).getPrice());
+                String stockProduct = String.valueOf(RepositoryProductsImpl.getProduct(i).getStock());
+                String subtotalProduct = String.valueOf(RepositoryProductsImpl.getProduct(i).getSubTotal());
+                String statusProduct = RepositoryProductsImpl.getProduct(i).getStatus();
+
+                String[] data = {id,nameProduct,priceProduct,stockProduct,subtotalProduct,statusProduct};
                 model.addRow(data);
             }
         }
@@ -256,6 +280,7 @@ public class Update extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
@@ -263,6 +288,7 @@ public class Update extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JComboBox<String> productNameComboBox;
     private javax.swing.JComboBox<String> quantityComboBox;
+    private javax.swing.JComboBox<String> statusComboBox;
     private javax.swing.JButton updateRequestButton;
     // End of variables declaration//GEN-END:variables
 }

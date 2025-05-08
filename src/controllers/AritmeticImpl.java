@@ -28,9 +28,14 @@ public class AritmeticImpl {
             subtotal = price * stock;
             setTotal(subtotal);
             setIdTemp();
+
         }
 
         getTotalResumen();
+        return subtotal;
+    }
+
+    public static double getSubtotal() {
         return subtotal;
     }
 
@@ -43,7 +48,7 @@ public class AritmeticImpl {
         if(change>= total){
             System.out.println("+--------------------------------------------------------------------+");
             System.out.println("|                       Resumen de carrito                           |");
-            RepositoryProductsImpl.getProducts();
+            RepositoryProductsImpl.getAllProducts();
             getTotalResumen();
             System.out.println("+--------------------------------------------------------------------+");
             System.out.println("|                         Metodo de pago                             |");

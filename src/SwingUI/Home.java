@@ -285,7 +285,7 @@ public class Home extends javax.swing.JFrame {
                     stock = 1;
                 }
 //                add item to software
-                Menu.addProduct(name, price, stock);
+                Menu.addProduct(name, price,AritmeticImpl.setSubtotal(price,stock), stock);
 
 //                add item to table
                 String[] product = {String.valueOf(AritmeticImpl.getIdTemp()),

@@ -72,14 +72,14 @@ public class Request extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Producto", "Precio", "Cantidad", "Subtotal"
+                "ID", "Producto", "Precio", "Cantidad", "Subtotal", "Estado"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -161,7 +161,9 @@ public class Request extends javax.swing.JPanel {
                 String price = String.valueOf(RepositoryProductsImpl.getProduct(i).getPrice());
                 String stock = String.valueOf(RepositoryProductsImpl.getProduct(i).getStock());
                 String subtotal = String.valueOf(RepositoryProductsImpl.getProduct(i).getSubTotal());
-                String[] data = {id,name,price,stock,subtotal};
+                String status = RepositoryProductsImpl.getProduct(i).getStatus();
+
+                String[] data = {id,name,price,stock,subtotal,status};
                 model.addRow(data);
             }
         }

@@ -81,7 +81,7 @@ public class Description {
                     System.out.println("+--------------------------------------------------------------------+");
                     System.out.println("|                       Producto Agregar                            |");
                     assignDescriptionProduct();
-                    Menu.addProduct(name, price, stock);
+//                    Menu.addProduct(name, price, stock);
                     AritmeticImpl.setSubtotal(price, stock);
                     turn = responseLoop();
 
@@ -96,7 +96,7 @@ public class Description {
                 break;
             case 3:
 
-                RepositoryProductsImpl.getProducts();
+                RepositoryProductsImpl.getAllProducts();
                 break;
             case 4:
                 assignPayProduct();

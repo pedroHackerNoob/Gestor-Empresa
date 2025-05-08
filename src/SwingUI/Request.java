@@ -4,6 +4,7 @@
  */
 package SwingUI;
 
+import controllers.AritmeticImpl;
 import models.Product;
 import repositories.RepositoryProductsImpl;
 
@@ -150,7 +151,6 @@ public class Request extends javax.swing.JPanel {
         int size = RepositoryProductsImpl.sizeProducts();
         DefaultTableModel model = (DefaultTableModel)historyTable.getModel();
         int tableSize = model.getRowCount();
-//        System.out.println(tableSize);
 
         if (tableSize ==0 && size >0){
 
@@ -168,6 +168,8 @@ public class Request extends javax.swing.JPanel {
             }
         }
 
+        RepositoryProductsImpl.getAllProducts();
+        AritmeticImpl.getTotal();
     }//GEN-LAST:event_refreshHistoryButtonActionPerformed
 
 

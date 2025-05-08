@@ -26,21 +26,16 @@ public class AritmeticImpl {
             System.out.println("Error: no valido");
         }else {
             subtotal = price * stock;
-            setTotal(subtotal);
             setIdTemp();
 
         }
 
-        getTotalResumen();
         return subtotal;
     }
 
     public static double getSubtotal() {
-        return subtotal;
-    }
 
-    public static void getTotalResumen(){
-        System.out.println("Total a pagar: $"+getTotal());
+        return subtotal;
     }
 
     public static double changeMoney(double change){
@@ -49,7 +44,7 @@ public class AritmeticImpl {
             System.out.println("+--------------------------------------------------------------------+");
             System.out.println("|                       Resumen de carrito                           |");
             RepositoryProductsImpl.getAllProducts();
-            getTotalResumen();
+            getTotal();
             System.out.println("+--------------------------------------------------------------------+");
             System.out.println("|                         Metodo de pago                             |");
             System.out.println("+--------------------------------------------------------------------+");
@@ -74,6 +69,7 @@ public class AritmeticImpl {
         total += subtotal;
     }
     public static double getTotal() {
+        System.out.println("Total a pagar: $"+total);
         return total;
     }
 }

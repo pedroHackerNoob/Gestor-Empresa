@@ -271,8 +271,6 @@ public class Home extends javax.swing.JFrame {
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
         try {
             if( validation(nameTextField.getText()) && validation(priceTextField.getText()) && validation(stockTextField.getText())){
-//                priceTextField.setText("10");
-//                stockTextField.setText("1");
 
                 String name = nameTextField.getText();
                 String priceSt = priceTextField.getText();

@@ -50,7 +50,7 @@ public class Sales extends javax.swing.JPanel {
         itemNameLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         labelTex1 = new javax.swing.JLabel();
-        itemPriceLabel1 = new javax.swing.JLabel();
+        item1PriceLabel = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 201, 23));
         setMaximumSize(new java.awt.Dimension(817, 757));
@@ -208,9 +208,9 @@ public class Sales extends javax.swing.JPanel {
         labelTex1.setForeground(new java.awt.Color(0, 0, 0));
         labelTex1.setText("C/U $:");
 
-        itemPriceLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        itemPriceLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        itemPriceLabel1.setText("12.00");
+        item1PriceLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        item1PriceLabel.setForeground(new java.awt.Color(0, 0, 0));
+        item1PriceLabel.setText("10.00");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -228,7 +228,7 @@ public class Sales extends javax.swing.JPanel {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(labelTex1)
                         .addGap(18, 18, 18)
-                        .addComponent(itemPriceLabel1)))
+                        .addComponent(item1PriceLabel)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -245,7 +245,7 @@ public class Sales extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelTex1)
-                    .addComponent(itemPriceLabel1))
+                    .addComponent(item1PriceLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantityItemsComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -324,20 +324,20 @@ public class Sales extends javax.swing.JPanel {
 
         if(name.equals("D")){
             name ="Dorado";
-            productPrice = 15;
+            productPrice = Double.parseDouble(itemPriceLabel.getText());
         }else {
             name ="Vapor";
-            productPrice = 10;
+            productPrice = Double.parseDouble(item1PriceLabel.getText());
         }
 
         Menu.addProduct(name, productPrice, AritmeticImpl.setSubtotal(productPrice,productStock),productStock);
         AritmeticImpl.setSubtotal(productPrice, productStock);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel item1PriceLabel;
     private javax.swing.JLabel itemNameLabel;
     private javax.swing.JLabel itemNameLabel1;
     private javax.swing.JLabel itemPriceLabel;
-    private javax.swing.JLabel itemPriceLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

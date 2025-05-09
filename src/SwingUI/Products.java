@@ -348,6 +348,14 @@ public class Products extends javax.swing.JFrame {
     private void desconectarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desconectarButtonActionPerformed
         if (sesion()) {
             userLabel.setText("sesion no iniciada");
+            Ending ending = new Ending();
+            ending.setSize(817, 757);
+            ending.setLocation(0,0);
+
+            contentPanel.removeAll();
+            contentPanel.add(ending, BorderLayout.CENTER);
+            contentPanel.revalidate();
+            contentPanel.repaint();
         }else {
             JOptionPane.showMessageDialog(null, "Usuario no ha iniciado sesion");
         }

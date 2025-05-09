@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v7 AritmeticImpl was updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

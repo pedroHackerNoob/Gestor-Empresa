@@ -4,6 +4,7 @@
  */
 package SwingUI;
 
+import javax.swing.*;
 import java.awt.*;
 
 /**
@@ -33,11 +34,16 @@ public class Products extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        iniciarsesionButton = new javax.swing.JButton();
+        desconectarButton = new javax.swing.JButton();
+        userPasswordTextField = new javax.swing.JPasswordField();
         optionPanel = new javax.swing.JPanel();
         createButton1 = new javax.swing.JButton();
         ReadButton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
-        deleteButton = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        userLabel = new javax.swing.JLabel();
         contentPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,7 +73,7 @@ public class Products extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(5, 5, 5));
@@ -94,6 +100,24 @@ public class Products extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("Ingrese Pin: ");
+
+        iniciarsesionButton.setText("Conectar");
+        iniciarsesionButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iniciarsesionButtonActionPerformed(evt);
+            }
+        });
+
+        desconectarButton.setText("Desconectar");
+        desconectarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                desconectarButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,6 +125,17 @@ public class Products extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(desconectarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(iniciarsesionButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userPasswordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -110,6 +145,15 @@ public class Products extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(userPasswordTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(iniciarsesionButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(desconectarButton)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -148,16 +192,29 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        deleteButton.setBackground(new java.awt.Color(240, 0, 0));
-        deleteButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        deleteButton.setForeground(new java.awt.Color(255, 255, 255));
-        deleteButton.setText("Delete");
-        deleteButton.setPreferredSize(new java.awt.Dimension(71, 25));
-        deleteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteButtonActionPerformed(evt);
-            }
-        });
+        jPanel4.setBackground(new java.awt.Color(5, 5, 5));
+
+        userLabel.setBackground(new java.awt.Color(255, 190, 11));
+        userLabel.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        userLabel.setForeground(new java.awt.Color(255, 190, 11));
+        userLabel.setText("sesion no iniciada");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(userLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(userLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout optionPanelLayout = new javax.swing.GroupLayout(optionPanel);
         optionPanel.setLayout(optionPanelLayout);
@@ -169,21 +226,21 @@ public class Products extends javax.swing.JFrame {
                     .addComponent(ReadButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(createButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
                     .addComponent(updateButton, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
-                    .addComponent(deleteButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         optionPanelLayout.setVerticalGroup(
             optionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optionPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addComponent(createButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ReadButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(updateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(deleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(141, 141, 141))
+                .addGap(266, 266, 266))
         );
 
         contentPanel.setBackground(new java.awt.Color(140, 0, 0));
@@ -196,7 +253,7 @@ public class Products extends javax.swing.JFrame {
         );
         contentPanelLayout.setVerticalGroup(
             contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 757, Short.MAX_VALUE)
+            .addGap(0, 755, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -229,45 +286,81 @@ public class Products extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void createButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButton1ActionPerformed
-        Sales sales = new Sales();
-        sales.setSize(817, 757);
-        sales.setLocation(0,0);
+        if (sesion()) {
+            Sales sales = new Sales();
+            sales.setSize(817, 757);
+            sales.setLocation(0,0);
 
 //        [1203, 802]
-        contentPanel.removeAll();
-        contentPanel.add(sales, BorderLayout.CENTER);
-        contentPanel.revalidate();
-        contentPanel.repaint();
+            contentPanel.removeAll();
+            contentPanel.add(sales, BorderLayout.CENTER);
+            contentPanel.revalidate();
+            contentPanel.repaint();
+        }
+
     }//GEN-LAST:event_createButton1ActionPerformed
 
     private void ReadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadButtonActionPerformed
-        Request request = new Request();
-        request.setSize(817, 757);
-        request.setLocation(0,0);
+        if (sesion()) {
+            Request request = new Request();
+            request.setSize(817, 757);
+            request.setLocation(0,0);
 
-        contentPanel.removeAll();
-        contentPanel.add(request, BorderLayout.CENTER);
-        contentPanel.revalidate();
-        contentPanel.repaint();
+            contentPanel.removeAll();
+            contentPanel.add(request, BorderLayout.CENTER);
+            contentPanel.revalidate();
+            contentPanel.repaint();
+        }
+
 
         
     }//GEN-LAST:event_ReadButtonActionPerformed
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
-        Update update = new Update();
-        update.setSize(817, 757);
-        update.setLocation(0,0);
-        
-        contentPanel.removeAll();
-        contentPanel.add(update, BorderLayout.CENTER);
-        contentPanel.revalidate();
-        contentPanel.repaint();
+        if (sesion()) {
+            Update update = new Update();
+            update.setSize(817, 757);
+            update.setLocation(0,0);
+
+            contentPanel.removeAll();
+            contentPanel.add(update, BorderLayout.CENTER);
+            contentPanel.revalidate();
+            contentPanel.repaint();
+        }
+
 
     }//GEN-LAST:event_updateButtonActionPerformed
 
-    private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_deleteButtonActionPerformed
+    private void iniciarsesionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarsesionButtonActionPerformed
+        String user = userPasswordTextField.getText();
+        if(!user.isEmpty()){
+            if (user.equals("admin") || user.equals("root")){
+                String userName = userPasswordTextField.getText();
+                userLabel.setText("");
+                userLabel.setText("Sesion inciada por: "+userName);
+                userPasswordTextField.setText("");
+            }else {
+                JOptionPane.showMessageDialog(null, "Usuario no valido");
+            }
+        }
+    }//GEN-LAST:event_iniciarsesionButtonActionPerformed
+
+    private void desconectarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desconectarButtonActionPerformed
+        if (sesion()) {
+            userLabel.setText("sesion no iniciada");
+        }else {
+            JOptionPane.showMessageDialog(null, "Usuario no ha iniciado sesion");
+        }
+        
+    }//GEN-LAST:event_desconectarButtonActionPerformed
+    private boolean sesion(){
+        if(!userLabel.getText().equals("sesion no iniciada")){
+            return true;
+        }else {
+            JOptionPane.showMessageDialog(null, "Usuario no encontrado");
+            return false;
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -309,13 +402,18 @@ public class Products extends javax.swing.JFrame {
     private javax.swing.JButton ReadButton;
     private javax.swing.JPanel contentPanel;
     private javax.swing.JButton createButton1;
-    private javax.swing.JButton deleteButton;
+    private javax.swing.JButton desconectarButton;
+    private javax.swing.JButton iniciarsesionButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel optionPanel;
     private javax.swing.JButton updateButton;
+    private javax.swing.JLabel userLabel;
+    private javax.swing.JPasswordField userPasswordTextField;
     // End of variables declaration//GEN-END:variables
 }

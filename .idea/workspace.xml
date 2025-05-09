@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v7 status added to Product">
+    <list default="true" id="7f0b5426-9e23-4053-9683-2461713fb873" name="Changes" comment="demo v7 AritmeticImpl was updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Sales.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/SwingUI/Update.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/AritmeticImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/controllers/Description.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/models/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/repositories/RepositoryProductsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionNegocio/utilities/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwingUI/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AritmeticImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/RepositoryProductsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingUI/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingUI/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +146,7 @@
       <workItem from="1746072172308" duration="2673000" />
       <workItem from="1746141370019" duration="5000" />
       <workItem from="1746735548623" duration="8296000" />
+      <workItem from="1746754377599" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="demo v1 menu was added in selectSale">
       <option name="closed" value="true" />
@@ -390,11 +374,6 @@
           <url>file://$PROJECT_DIR$/src/SwingUI/Home.java</url>
           <line>288</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SwingUI/Products.java</url>
-          <line>256</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SwingUI/Sales.java</url>
